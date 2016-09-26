@@ -1,0 +1,10 @@
+.\UV4Build\csnmpmib.o: ./Src/SNMP/SNMPMib/CSnmpMib.cpp
+.\UV4Build\csnmpmib.o: ./Src/SNMP/SNMPMib/CSnmpMib.h
+.\UV4Build\csnmpmib.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\csnmpmib.o: .\Src\SNMP\CSnmpDataInOut.h
+.\UV4Build\csnmpmib.o: ./Src/SNMP/SNMPMib/CMibImpl.h
+.\UV4Build\csnmpmib.o: ./Src/SNMP/SNMPMib/CMibEntry.h
+.\UV4Build\csnmpmib.o: ./Src/SNMP/SNMPMib/CMibNodeObject.h
+.\UV4Build\csnmpmib.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\csnmpmib.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\csnmpmib.o: .\Src\SNMP\Depend\CErrorValueDefine.h

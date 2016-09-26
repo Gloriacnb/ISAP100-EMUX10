@@ -1,0 +1,11 @@
+.\UV4Build\s1l_line_input.o: ./Src/MidWare/s1l/source/s1l_line_input.c
+.\UV4Build\s1l_line_input.o: .\Src\lpc\include\lpc_string.h
+.\UV4Build\s1l_line_input.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\s1l_line_input.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\s1l_line_input.o: .\Src\MidWare\include\TerminalUart.h
+.\UV4Build\s1l_line_input.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\s1l_line_input.o: D:\WorkProgram\Keil\ARM\RV31\INC\rtl.h
+.\UV4Build\s1l_line_input.o: .\Src\MidWare\s1l\include\s1l_line_input.h
+.\UV4Build\s1l_line_input.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\s1l_line_input.o: .\Src\Application\Task\Task_define.h
+.\UV4Build\s1l_line_input.o: .\Src\MidWare\include\EZ_types.h

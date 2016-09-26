@@ -1,0 +1,10 @@
+.\UV4Build\cmibvc12.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibVC12.cpp
+.\UV4Build\cmibvc12.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibVC12.h
+.\UV4Build\cmibvc12.o: .\Src\SNMP\SNMPMib\CMibEntry.h
+.\UV4Build\cmibvc12.o: .\Src\SNMP\SNMPMib\CMibNodeObject.h
+.\UV4Build\cmibvc12.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\cmibvc12.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\cmibvc12.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\cmibvc12.o: .\Src\SNMP\Depend\CErrorValueDefine.h
+.\UV4Build\cmibvc12.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibVC12Port.h
+.\UV4Build\cmibvc12.o: .\Src\SNMP\SNMPMib\CMibColumn.h

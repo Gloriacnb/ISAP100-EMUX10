@@ -1,0 +1,5 @@
+-c --cpu ARM926EJ-S -D__RTX -g -O0 --apcs=interwork -I.\Src\lpc\include -I.\Src\lpc32xx\include 
+-I D:\WorkProgram\Keil\ARM\RV31\INC 
+-I D:\WorkProgram\Keil\ARM\CMSIS\Include 
+-I D:\WorkProgram\Keil\ARM\Inc\Philips 
+-o ".\UV4Build\lpc_wave.o" --omf_browse ".\UV4Build\lpc_wave.crf" --depend ".\UV4Build\lpc_wave.d" "./Src/lpc/source/lpc_wave.c"

@@ -1,0 +1,12 @@
+.\UV4Build\cxcconfigdata.o: ./Src/Application/DeviceComponent/SlotCard/CXcConfigData.cpp
+.\UV4Build\cxcconfigdata.o: ./Src/Application/DeviceComponent/SlotCard/CXcConfigData.h
+.\UV4Build\cxcconfigdata.o: .\Src\Application\BaseClass\CMSSave.h
+.\UV4Build\cxcconfigdata.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\cxcconfigdata.o: .\Src\Application\Reference\CNandFlashDef.h
+.\UV4Build\cxcconfigdata.o: .\Src\SNMP\Depend\CErrorValueDefine.h
+.\UV4Build\cxcconfigdata.o: .\Src\Application\DeviceComponent\CNandFlash.h
+.\UV4Build\cxcconfigdata.o: .\Src\MidWare\include\Mid_FlashData.h
+.\UV4Build\cxcconfigdata.o: .\Src\lpc\include\lpc_nandflash_params.h
+.\UV4Build\cxcconfigdata.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\cxcconfigdata.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\cxcconfigdata.o: .\Src\Application\Tools\CCheckData.h

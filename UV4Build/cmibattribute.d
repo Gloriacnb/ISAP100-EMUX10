@@ -1,0 +1,17 @@
+.\UV4Build\cmibattribute.o: ./Src/SNMP/SNMPMib/Private/AttributeGroup/CMibAttribute.cpp
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\include\CMibAttribute.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\CMibEntry.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\CMibNodeObject.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\cmibattribute.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\Depend\CErrorValueDefine.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\include\CMibBasicAttribute.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\CMibColumn.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\include\CMibCommunicationAttribute.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\include\CMibDateAttribute.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\include\CMibVersionAttribute.h
+.\UV4Build\cmibattribute.o: ./Src/SNMP/SNMPMib/Private/AttributeGroup/CMibVersionInfoTable.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\CMibTable.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\include\Mib_define.h
+.\UV4Build\cmibattribute.o: .\Src\SNMP\SNMPMib\CMibTableColumn.h

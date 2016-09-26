@@ -1,0 +1,16 @@
+.\UV4Build\isap100board.o: ./Src/Application/ISAP100board.cpp
+.\UV4Build\isap100board.o: ./Src/Application/ISAP100board.h
+.\UV4Build\isap100board.o: .\Src\MidWare\include\Mid_Timer.h
+.\UV4Build\isap100board.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\isap100board.o: .\Src\MidWare\include\Mid_SPI.h
+.\UV4Build\isap100board.o: .\Src\MidWare\EZwellChipDriver\ChipGluLogic.h
+.\UV4Build\isap100board.o: .\Src\MidWare\EZwellChipDriver\ChipOptLogic.h
+.\UV4Build\isap100board.o: .\Src\MidWare\include\Mid_RC6400App.h
+.\UV4Build\isap100board.o: .\Src\MidWare\include\Mid_RC7880A1App.h
+.\UV4Build\isap100board.o: .\Src\MidWare\include\Mid_NandFlash.h
+.\UV4Build\isap100board.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\isap100board.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\isap100board.o: .\Src\MidWare\EZwellChipDriver\ChipSlotLogic.h
+.\UV4Build\isap100board.o: .\Src\MidWare\include\Mid_FlashData.h
+.\UV4Build\isap100board.o: .\Src\lpc\include\lpc_nandflash_params.h
+.\UV4Build\isap100board.o: .\Src\lpc\include\lpc_types.h

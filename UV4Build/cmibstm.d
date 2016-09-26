@@ -1,0 +1,17 @@
+.\UV4Build\cmibstm.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibSTM.cpp
+.\UV4Build\cmibstm.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibSTM.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibGroup.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibEntry.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibNodeObject.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\cmibstm.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\Depend\CErrorValueDefine.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\include\Mib_define.h
+.\UV4Build\cmibstm.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\string.h
+.\UV4Build\cmibstm.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibSTMConfig.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibTable.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibTableColumn.h
+.\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibColumn.h
+.\UV4Build\cmibstm.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibSTMOverheadTable.h
+.\UV4Build\cmibstm.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibSTMAlarmProperty.h

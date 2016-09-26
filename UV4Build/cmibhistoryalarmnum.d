@@ -1,0 +1,14 @@
+.\UV4Build\cmibhistoryalarmnum.o: ./Src/Application/Reference/AlarmModule/AlarmMib/CMibHistoryAlarmNum.cpp
+.\UV4Build\cmibhistoryalarmnum.o: ./Src/Application/Reference/AlarmModule/AlarmMib/CMibHistoryAlarmNum.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\SNMPMib\CMibEntry.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\SNMPMib\CMibNodeObject.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\Depend\CErrorValueDefine.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\SNMPMib\CMibColumn.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\CSnmpCell.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\Depend\CThreadTask.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\CSnmpVariableBinding.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\Depend\CCommonDefine.h
+.\UV4Build\cmibhistoryalarmnum.o: .\Src\SNMP\Depend\CClassPointer.h

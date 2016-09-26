@@ -1,0 +1,5 @@
+--cpu ARM926EJ-S --pd "__RTX SETA 1" -g --apcs=interwork 
+-I D:\WorkProgram\Keil\ARM\RV31\INC 
+-I D:\WorkProgram\Keil\ARM\CMSIS\Include 
+-I D:\WorkProgram\Keil\ARM\Inc\Philips 
+--pd "RAM_INTVEC SETA 1" --pd "REMAP SETA 1" --list ".\SWI_Table.lst" --xref -o ".\UV4Build\SWI_Table.o" --depend ".\UV4Build\SWI_Table.d" "./Src/RTX_Config/SWI_Table.s"

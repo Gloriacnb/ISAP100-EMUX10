@@ -1,0 +1,14 @@
+.\UV4Build\mid_spi.o: ./Src/MidWare/Mid_SPI.c
+.\UV4Build\mid_spi.o: .\Src\MidWare\include\Mid_SPI.h
+.\UV4Build\mid_spi.o: .\Src\MidWare\include\EZ_Types.h
+.\UV4Build\mid_spi.o: D:\WorkProgram\Keil\ARM\RV31\INC\rtl.h
+.\UV4Build\mid_spi.o: .\Src\lpc32xx\include\lpc32xx_gpio_driver.h
+.\UV4Build\mid_spi.o: .\Src\lpc32xx\include\lpc32xx_gpio.h
+.\UV4Build\mid_spi.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\mid_spi.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\mid_spi.o: .\Src\lpc32xx\include\lpc32xx_chip.h
+.\UV4Build\mid_spi.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\mid_spi.o: .\Src\lpc32xx\include\lpc32xx_ssp_driver.h
+.\UV4Build\mid_spi.o: .\Src\lpc32xx\include\lpc32xx_ssp.h
+.\UV4Build\mid_spi.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\mid_spi.o: .\Src\MidWare\EZwellChipDriver\ChipGluLogic.h

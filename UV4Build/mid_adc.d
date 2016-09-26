@@ -1,0 +1,14 @@
+.\UV4Build\mid_adc.o: ./Src/MidWare/Mid_ADC.c
+.\UV4Build\mid_adc.o: .\Src\lpc32xx\include\lpc32xx_intc_driver.h
+.\UV4Build\mid_adc.o: .\Src\lpc32xx\include\lpc32xx_intc.h
+.\UV4Build\mid_adc.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\mid_adc.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\mid_adc.o: .\Src\lpc32xx\include\lpc32xx_chip.h
+.\UV4Build\mid_adc.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\mid_adc.o: .\Src\lpc32xx\include\lpc32xx_clkpwr_driver.h
+.\UV4Build\mid_adc.o: .\Src\lpc32xx\include\lpc32xx_clkpwr.h
+.\UV4Build\mid_adc.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\mid_adc.o: .\Src\lpc32xx\include\lpc32xx_adc_driver.h
+.\UV4Build\mid_adc.o: .\Src\lpc32xx\include\lpc32xx_tsc.h
+.\UV4Build\mid_adc.o: .\Src\lpc\include\lpc_types.h
+.\UV4Build\mid_adc.o: D:\WorkProgram\Keil\ARM\RV31\INC\rtl.h

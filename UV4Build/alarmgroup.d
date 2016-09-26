@@ -1,0 +1,17 @@
+.\UV4Build\alarmgroup.o: ./Src/SNMP/SNMPMib/Private/AlarmGroup/AlarmGroup.cpp
+.\UV4Build\alarmgroup.o: ./Src/SNMP/SNMPMib/Private/AlarmGroup/AlarmGroup.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\SNMPMib\CMibGroup.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\SNMPMib\CMibEntry.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\SNMPMib\CMibNodeObject.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\alarmgroup.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\Depend\CErrorValueDefine.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\SNMPMib\include\Mib_define.h
+.\UV4Build\alarmgroup.o: ./Src/SNMP/SNMPMib/Private/AlarmGroup/AlarmNumberTable.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\SNMPMib\CMibTable.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\SNMPMib\CMibTableColumn.h
+.\UV4Build\alarmgroup.o: .\Src\SNMP\SNMPMib\CMibColumn.h
+.\UV4Build\alarmgroup.o: ./Src/SNMP/SNMPMib/Private/AlarmGroup/CurrentAlarmTable.h
+.\UV4Build\alarmgroup.o: ./Src/SNMP/SNMPMib/Private/AlarmGroup/HistoryAlarmTable.h
+.\UV4Build\alarmgroup.o: ./Src/SNMP/SNMPMib/Private/AlarmGroup/AlarmPropertyGlobalTable.h

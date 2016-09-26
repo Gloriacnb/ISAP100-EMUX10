@@ -1,0 +1,13 @@
+.\UV4Build\cmibvcgconfig.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibVCGConfig.cpp
+.\UV4Build\cmibvcgconfig.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibVCGConfig.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\SNMPMib\CMibEntry.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\SNMPMib\CMibNodeObject.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\cmibvcgconfig.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\Depend\CErrorValueDefine.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\SNMPMib\CMibColumn.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\CSnmpCell.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\Depend\CThreadTask.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\CSnmpVariableBinding.h
+.\UV4Build\cmibvcgconfig.o: .\Src\SNMP\Depend\CCommonDefine.h

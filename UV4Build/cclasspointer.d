@@ -1,0 +1,11 @@
+.\UV4Build\cclasspointer.o: ./Src/SNMP/Depend/CClassPointer.cpp
+.\UV4Build\cclasspointer.o: ./Src/SNMP/Depend/CClassPointer.h
+.\UV4Build\cclasspointer.o: .\Src\MidWare\include\EZ_types.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\SNMPMib\CSnmpMib.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\CSnmpDataInOut.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\SNMPMib\CMibImpl.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\SNMPMib\CMibEntry.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\SNMPMib\CMibNodeObject.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\CSnmpVariable.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
+.\UV4Build\cclasspointer.o: .\Src\SNMP\Depend\CErrorValueDefine.h
