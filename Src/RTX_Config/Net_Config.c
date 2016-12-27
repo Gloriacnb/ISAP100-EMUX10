@@ -128,7 +128,7 @@
 
 //     <o>Address byte 3 <0-255>
 //     <i> Default: 0
-#define _GW3           0
+#define _GW3           1
 
 //     <o>Address byte 4 <0-255>
 //     <i> Default: 254
@@ -204,7 +204,7 @@
 //     <i> will send a Gratuitous ARP notification at startup,
 //     <i> or when the device IP address has changed.
 //     <i> Default: Disabled
-#define ARP_NOTIFY     0
+#define ARP_NOTIFY     1
 
 //   </h>
 //   <e>IGMP Group Management
@@ -646,7 +646,7 @@
 //   <o>Inactive Session Timeout in seconds <5-120>
 //   <i> When timeout expires TFTP Session is closed.
 //   <i> Default: 15
-#define TFTP_DEFTOUT   30
+#define TFTP_DEFTOUT   15
 
 //   <o>Number of Retries <1-10>
 //   <i> How many times TFTP Server will try to

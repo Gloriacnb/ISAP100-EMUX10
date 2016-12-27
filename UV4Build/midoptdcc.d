@@ -61,5 +61,6 @@
 .\UV4Build\midoptdcc.o: .\Src\Application\SoftSwitch\DCCChannelRcv.h
 .\UV4Build\midoptdcc.o: .\Src\Application\SoftSwitch\UpE1SabitChannelSnd.h
 .\UV4Build\midoptdcc.o: .\Src\Application\SoftSwitch\UpE1SabitChannelRcv.h
+.\UV4Build\midoptdcc.o: .\Src\Application\Tools\UID.h
 .\UV4Build\midoptdcc.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_tree.CC
 .\UV4Build\midoptdcc.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\string.CC

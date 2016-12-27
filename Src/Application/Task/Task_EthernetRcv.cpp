@@ -31,6 +31,7 @@
 //#include "TerminalUart.h"
 
 #include "EthMemory.h"
+#include "net_api.h"
 
 OS_TID t_eth_rcv;
 
@@ -67,7 +68,7 @@ void insertEthList(LAYER2FRAME* frame) {
 
 
 /*
- * LPC3250ÒÔÌ«¿ÚÊÕ°üÈÎÎñ
+ * LPC3250ï¿½ï¿½Ì«ï¿½ï¿½ï¿½Õ°ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 __task void T_Eth_Rcv(void) {
 	while( 1 ) {
@@ -117,7 +118,7 @@ extern void insert_dcc_list(DCC_FRAME frame);
 
 
 /*
- * DCC ÊÕ°üÈÎÎñ
+ * DCC ï¿½Õ°ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 __task void T_DCC_Rcv(void) {
 //	std::list<DCC_FRAME>::iterator it;
@@ -177,8 +178,8 @@ __task void T_DCC_Rcv(void) {
 
 
 /*
- * mac µØÖ·ÀÏ»¯
- * note£º´Ë´¦Ó¦ÓÃÁË¹ØÒÔÌ«ÖÐ¶Ï£¬¿ÉÄÜ¹Ø±ÕÈÎÎñµ÷¶È¸üºÃÐ©
+ * mac ï¿½ï¿½Ö·ï¿½Ï»ï¿½
+ * noteï¿½ï¿½ï¿½Ë´ï¿½Ó¦ï¿½ï¿½ï¿½Ë¹ï¿½ï¿½ï¿½Ì«ï¿½Ð¶Ï£ï¿½ï¿½ï¿½ï¿½Ü¹Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¸ï¿½ï¿½ï¿½Ð©
  */
 //__task void T_aging(void) {
 //	while(1) {
@@ -205,8 +206,21 @@ void SendFrameBySwitch(LAYER2FRAME* frame) {
 //	term_dat_out_len(frame->frame, frame->length);
 }
 
+static void initIpPotocal(void) {
+	init_TcpNet();
+	initNetApi();
+	uint8* ip = DeviceLocal::instance().GetDeviceAttributeObject().ReadExternalIP();
+	uint8* mask = DeviceLocal::instance().GetDeviceAttributeObject().ReadExternalMask();
+	uint8* gwip = DeviceLocal::instance().GetDeviceAttributeObject().ReadGatewayIP();
+	uint8* mac = DeviceLocal::instance().GetDeviceAttributeObject().ReadMACAddress();
+	setNetMAC(mac);
+	setNetIP(ip, mask);
+	setNetGW(gwip);
+}
+
 void CommunicationInit(int mode) {
 	InitEthMemory();
+	initIpPotocal();
 	if( mode == 0 ) {
 		t_eth_rcv = os_tsk_create(T_Eth_Rcv, P_ETH_RCV);
 		t_dcc_rcv = os_tsk_create(T_DCC_Rcv, P_DCC_RCV);
@@ -221,8 +235,8 @@ void CommunicationInit(int mode) {
 		int_enable_eth_real();
 
 		/* remove later*/
-		SIC_2_Enable();
-		Dcc_interrupt_enable();
+//		SIC_2_Enable();
+//		Dcc_interrupt_enable();
 	}
 }
 

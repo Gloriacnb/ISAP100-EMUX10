@@ -12,6 +12,7 @@
 #include "lpc32xx_intc_driver.h"
 #include <stdlib.h>
 #include "CUpE1Port.h"
+#include "UID.h"
 
 #ifdef EZ_Debug
 #include "TraceCounter.h"
@@ -69,7 +70,13 @@ loop:
  	if (frame != NULL ) {
  		uint8* dp = frame->frame;
  		GetDCCPacket(ch, dp);
-		df.chuid = ch;
+ 		ST_NM_Channel nminfo;
+ 		nminfo.slot = 100;
+ 		nminfo.subtype = subtype_dcc;
+ 		nminfo.sn = ch;
+ 		uint32 nmuid = UID::makeUID(&nminfo);
+
+		df.chuid = nmuid;
 		df.frame = frame;
 		insert_dcc_list(df);
 		flagok = 1;

@@ -16,7 +16,7 @@
 // <q>Print Time Stamp
 // ===================
 //   <i> Enable printing the time-info in debug messages
-#define DBG_TIME       0
+#define DBG_TIME       1
 
 // <h>TCPnet Debug Definitions
 // ===========================
@@ -38,11 +38,11 @@
 
 //   <o>ARP Debug   <0=> Off <1=> Errors only <2=> Full debug
 //   <i> Turn On/Off ARP debug messages
-#define DBG_ARP        0
+#define DBG_ARP        1
 
 //   <o>IP Debug    <0=> Off <1=> Errors only <2=> Full debug
 //   <i> Turn On/Off IP debug messages
-#define DBG_IP         0
+#define DBG_IP         1
 
 //   <o>ICMP Debug  <0=> Off <1=> Errors only <2=> Full debug
 //   <i> Turn On/Off ICMP debug messages
@@ -54,7 +54,7 @@
 
 //   <o>UDP Debug   <0=> Off <1=> Errors only <2=> Full debug
 //   <i> Turn On/Off UDP debug messages
-#define DBG_UDP        0
+#define DBG_UDP        1
 
 //   <o>TCP Debug   <0=> Off <1=> Errors only <2=> Full debug
 //   <i> Turn On/Off TCP debug messages

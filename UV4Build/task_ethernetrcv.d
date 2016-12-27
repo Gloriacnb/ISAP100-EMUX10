@@ -83,6 +83,7 @@
 .\UV4Build\task_ethernetrcv.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_ioiter.h
 .\UV4Build\task_ethernetrcv.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_numeric.h
 .\UV4Build\task_ethernetrcv.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_punct.h
+.\UV4Build\task_ethernetrcv.o: .\Src\Application\Tools\net_api.h
 .\UV4Build\task_ethernetrcv.o: .\Src\MidWare\EZwellChipDriver\ChipSlotLogic.h
 .\UV4Build\task_ethernetrcv.o: .\Src\MidWare\include\ClockSourceDefine.h
 .\UV4Build\task_ethernetrcv.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdlib.h

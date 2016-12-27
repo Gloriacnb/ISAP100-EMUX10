@@ -70,5 +70,7 @@
 .\UV4Build\cli_debug_cmd_group.o: .\Src\Application\DeviceComponent\BusinessResource\E1Module\CUInterface_define.h
 .\UV4Build\cli_debug_cmd_group.o: .\Src\Application\Tools\TraceCounter.h
 .\UV4Build\cli_debug_cmd_group.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\UV4Build\cli_debug_cmd_group.o: .\Src\Application\Tools\net_api.h
+.\UV4Build\cli_debug_cmd_group.o: .\Src\Application\Tools\CPPTools.h
 .\UV4Build\cli_debug_cmd_group.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_tree.CC
 .\UV4Build\cli_debug_cmd_group.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\string.CC

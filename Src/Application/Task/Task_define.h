@@ -18,7 +18,7 @@ extern "C"
 
 static const uint8 P_Reset  		= 1;
 static const uint8 P_WDT			= 1;
-static const uint8 P_CLI_Process 	= 2;
+static const uint8 P_CLI_Process 	= 220;
 static const uint8 P_Online_Check 	= 3;
 static const uint8 P_ETH_RCV		= 99;
 static const uint8 P_DCC_RCV		= 98;

@@ -55,6 +55,7 @@
 .\UV4Build\cpptools.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_ioiter.h
 .\UV4Build\cpptools.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_numeric.h
 .\UV4Build\cpptools.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_punct.h
+.\UV4Build\cpptools.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdio.h
 .\UV4Build\cpptools.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\string.CC
 .\UV4Build\cpptools.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_punct.CC
 .\UV4Build\cpptools.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\rw/_numeric.CC

@@ -6,7 +6,7 @@
 #define PCBVersion		((Hardware_V3<<4)+Hardware_Vpot)
 
 #define Main_Vr			3		//  main�汾��
-#define Main_Vn			12		//  main���±�־��0Ϊ���Ǹ���
+#define Main_Vn			15		//  main���±�־��0Ϊ���Ǹ���
 
 unsigned char const vertion_end[32]={
 	0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,

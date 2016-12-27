@@ -4,6 +4,25 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 D:\EclipseWorkspace\ISAP100_Realese\ISAP100_Realese.uvproj
-Project File Date:  03/23/2016
+Project File Date:  12/14/2016
 
 <h2>Output:</h2>
+Build target 'LPC3250'
+compiling ISAP_RTX.cpp...
+compiling Task_EthernetRcv.cpp...
+linking...
+Program Size: Code=666400 RO-data=64124 RW-data=3976 ZI-data=5806164  
+User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
+".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC3250'
+compiling DCCSdhSnd.cpp...
+linking...
+Program Size: Code=666400 RO-data=64124 RW-data=3976 ZI-data=5806164  
+User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
+".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC3250'
+compiling fixaddr.c...
+linking...
+Program Size: Code=666400 RO-data=64124 RW-data=3976 ZI-data=5806164  
+User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
+".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).

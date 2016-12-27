@@ -23,7 +23,6 @@
 #include "SysError.h"
 #include <iostream>
 #include "TopoManager.h"
-
 //using namespace std;
 
 int sys_init_status = 0;		//0 δ��ʼ����1��ʼ��������-1���쳣
@@ -40,13 +39,12 @@ extern U16 Process_SNMP(U8 socket, U8 *remip, U16 remport, U8 *buf, U16 len);
 #define LED_ON(led)  P3_OUTP_CLR = led;
 #define LED_OFF(led) P3_OUTP_SET = led;
 
-extern LOCALM localm[];
-
 extern "C" {
 	void lpc32xx_irq_handler(void);
 	void os_clock_interrupt (void);
 	void interrupt_ethernet (void);
 }
+
 /*----------------------------------------------------------------------------
  *        Task 1 'phaseA': Phase A output
  *---------------------------------------------------------------------------*/
@@ -93,16 +91,6 @@ __task void tcp_tick (void) {
 
 
 __task void tcp_main (void) {
-	init_TcpNet ();
-	memcpy (localm[0].IpAdr,
-			DeviceLocal::instance().GetDeviceAttributeObject().ReadExternalIP(),
-			4 );
-	memcpy (localm[0].NetMask,
-			DeviceLocal::instance().GetDeviceAttributeObject().ReadExternalMask(),
-			4 );
-	memcpy (localm[0].DefGW,
-			DeviceLocal::instance().GetDeviceAttributeObject().ReadGatewayIP(),
-			4 );
 	udp_soc = udp_get_socket (0, UDP_OPT_SEND_CS | UDP_OPT_CHK_CS, Process_SNMP);
 	if (udp_soc != 0) {
 	/* Open UDP port 161 for communication */
@@ -137,10 +125,12 @@ __task void init (void) {
 	}
 	if( sys_init_status <= 0 ) {
 		CLI_init();
+		CommunicationInit(1);
 		t_toggleRun = os_tsk_create (toggleRun, 200);  /* start task phaseA                */
 		os_tsk_create(T_Online_Check, P_Online_Check);
 	}
 	else {
+		CommunicationInit(0); //通信模块初始化
 		static uint8 snmpStack[4096];
 		os_tsk_create_user(snmp_init, 2, snmpStack, sizeof(snmpStack));
 
@@ -153,19 +143,13 @@ __task void init (void) {
 
 		if( DeviceLocal::instance().GetDeviceAttributeObject().GetDeviceSubtype() != type_emux_v10 &&
 				DeviceLocal::instance().GetDeviceAttributeObject().GetDeviceSubtype() != type_emux_v12 ) {
-			CommunicationInit(0);
 			t_alarm_process = os_tsk_create(T_Alarm_process_ISAP, P_Alarm_Process);
 			t_led = os_tsk_create(T_LED_SYS, P_LED);
 		}
 		else {
-			CommunicationInit(0);
 			t_alarm_process = os_tsk_create(T_Alarm_process_PCM, P_Alarm_Process);
 			t_led_upE1 = os_tsk_create(T_LED_UP_E1, P_LED);
 		}
-
-
-
-
 		t_toggleRun = os_tsk_create (toggleRun, 200);  /* start task phaseA                */
 		os_tsk_create(T_Online_Check, P_Online_Check);
 

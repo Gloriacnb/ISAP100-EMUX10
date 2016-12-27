@@ -44,10 +44,6 @@
 
 DeviceLocal DeviceLocal::dev;
 
-extern U8 own_hw_adr[];
-extern U8 lhost_name[];
-
-
 DeviceLocal::DeviceLocal() {
 	// TODO Auto-generated constructor stub
 	factory = 0;
@@ -71,9 +67,15 @@ void DeviceLocal::DeviceRun(void) {
 
 }
 
+/*
+ * 初始化芯片外设
+ * 初始化Flash
+ * 根据设备类型和子类型做板级初始化
+ *
+ */
 void DeviceLocal::DeviceInit(void) {
-	/* �޸�MAC��ַ
-	 * Note: ������TCPЭ��ջ��ʼ��ǰ
+	/* �޸�MAC��ַ
+	 * Note: ������TCPЭ��ջ��ʼ��ǰ
 	 */
 	SIC_2_Disable();
 	int_enable(IRQ_SUB1IRQ);
@@ -147,19 +149,6 @@ void DeviceLocal::DeviceInit(void) {
 	new switchPortSNMP();
 	new SwitchPortCPU();
 	new InnerDCCManager();
-
-	uint32 len = 6;
-	uint8* mac = DevAttr->ReadMACAddress();
-	printf( "\n mac is :");
-	for (int i = 0; i < len; ++i) {
-		printf( " %02x.", mac[i] );
-	}
-	printf( "\n");
-	
- 	memcpy (own_hw_adr, mac, len);
-//   	memcpy (lhost_name, DevAttr->GetDeviceName(&len), len);
-
-
 
 }
 

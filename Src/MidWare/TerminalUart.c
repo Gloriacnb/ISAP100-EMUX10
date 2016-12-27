@@ -426,7 +426,7 @@ void TerminalUARTInit(void) {
 	    /* Setup RX and TX callbacks */
 	    cbs.rxcb = term_dat_recv_cb;
 	    cbs.txcb = term_dat_send_cb;
-	    cbs.rxerrcb = NULL;
+	    cbs.rxerrcb = term_status_cb;
 	    uart_ioctl(uartdev, UART_INSTALL_CBS, (INT_32) &cbs);
 	    int_enable(IRQ_UART_IIR5);
 	  }

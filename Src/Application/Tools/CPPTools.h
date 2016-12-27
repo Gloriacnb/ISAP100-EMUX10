@@ -16,6 +16,8 @@ public:
 	virtual ~CPPTools();
 
 	static std::string number2string(uint32 i);
+	static uint32 ezip_aton(std::string& s);
+	static void ezip_aton(std::string& s, uint8* ip);
 };
 
 #endif /* CPPTOOLS_H_ */

@@ -46,6 +46,8 @@
 #include <rtl.h>
 //#endif
 #include <stdio.h>
+#include "net_api.h"
+#include "CPPTools.h"
 
 extern "C" {
 void int_enable_eth_real(void);
@@ -72,6 +74,7 @@ static BOOL_32 cmd_dcc_test(void);
 static BOOL_32 cmd_dcn_test(void);
 
 static BOOL_32 cmd_mreg(void);
+static BOOL_32 cmd_ping(void);
 //static BOOL_32 cmd_slotinfo(void);
 /* Peek saved data */
 static UNS_32 last_addr = 0;
@@ -426,6 +429,22 @@ static CMD_ROUTE_T cmd_mreg_cmd =
 	(CMD_ROUTE_E*)NULL
 };
 
+/*cmd ping*/
+static UNS_32 cmd_ping_plist[] =
+{
+    (PARSE_TYPE_STR ), // The "ping" command
+    (PARSE_TYPE_STR | PARSE_TYPE_END) // ipaddress
+};
+static CMD_ROUTE_T cmd_ping_cmd =
+{
+    (UNS_8 *) "ping",
+    cmd_ping,
+    (UNS_8 *) "ping a host. ",
+    (UNS_8 *) "ping <host>\r\n"
+                "<host>  : ip address.\r\n",
+    cmd_ping_plist,
+    (CMD_ROUTE_E*)NULL
+};
 
 /* Debug group */
 GROUP_LIST_T debug_group =
@@ -837,7 +856,7 @@ static UNS_8 parsrangeerr_msg[] = "channel range is invalid, 0~3 is valid";
 
 BOOL_32 cmd_sread(void) {
 	UNS_8 slot = cmd_get_field_val(1);
-	UNS_8 spich = cmd_get_field_val(2);//1¸öslot·ÖÅäÁË4Â·spi channel£¬0-cpld/1¡¢2-1054
+	UNS_8 spich = cmd_get_field_val(2);//1ï¿½ï¿½slotï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4Â·spi channelï¿½ï¿½0-cpld/1ï¿½ï¿½2-1054
 	UNS_8 sel = cmd_get_field_val(3);
 	UNS_16 addr = cmd_get_field_val(4);
 	UNS_8 byte = 0;
@@ -1430,7 +1449,7 @@ static BOOL_32 cmd_coewrite(void) {
 	uint16 temp[8] = {0};
 
 	if( parse_get_entry_count() == 5 ) {
-		printf("\nÊäÈë0x1234¸ñÊ½µÄ8¸ö¿éÊý¾Ý£¬ÒÔ¿Õ¸ñ¼ä¸ô.\n");
+		printf("\nï¿½ï¿½ï¿½ï¿½0x1234ï¿½ï¿½Ê½ï¿½ï¿½8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½Ô¿Õ¸ï¿½ï¿½ï¿½.\n");
 		static char buff[64] = "0x1111 0x2222 0x3333 0x4444";
 		int bytes = 0;
 		memset(buff, '\0', sizeof(buff));
@@ -1451,7 +1470,7 @@ static BOOL_32 cmd_coewrite(void) {
 			temp[i] = (uint16)data[i];
 		}
 	}
-	else { //¶ÁÖ¸¶¨ÅäÖÃÎÄ¼þÊý¾Ýµ½temp
+	else { //ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ýµï¿½temp
 		FILE* f;
 		char* fname = (char*)cmd_get_field_val(5);
 		f = fopen(fname, "r");
@@ -1532,6 +1551,48 @@ static BOOL_32 cmd_mreg(void) {
 	return TRUE;
 }
 
+uint8 ip[4] = {0};
+uint32 sndPkt = 0;
+uint32 rcvPkt = 0;
+uint32 losPkt = 0;
+
+__task void ping_a_host(void) {
+    while(1) {
+        ++sndPkt;
+        if( ifIPExist(ip) == 0 ) {
+            rcvPkt++;
+            printf("Ping %d.%d.%d.%d OK!\n", ip[0], ip[1], ip[2], ip[3]);
+            os_dly_wait(100);
+        }
+        else {
+            losPkt++;
+            printf("!!!Ping %d.%d.%d.%d Failed!!!!\n", ip[0], ip[1], ip[2], ip[3]);
+            os_dly_wait(300);
+        }
+    }
+}
+
+BOOL_32 cmd_ping(void) {
+    sndPkt = 0;
+    rcvPkt = 0;
+    losPkt = 0;
+    memset(ip, 0, 4);
+    std::string s((char*)cmd_get_field_val(1));
+    CPPTools::ezip_aton(s, ip);
+    OS_TID tsk_ping = os_tsk_create(ping_a_host, 30);
+
+    char c = 0;
+    while ( true ) {
+        c = getkey();
+        if( term_break() ) {
+            os_tsk_delete(tsk_ping);
+            break;
+        }
+    }
+    printf("\nsndPkt = %d, rcvPkt = %d, losPkt = %d\n", sndPkt, rcvPkt, losPkt);
+    return TRUE;
+}
+
 
 /***********************************************************************
  *
@@ -1575,6 +1636,6 @@ void CLI_debug_add_commands(void)
 	cmd_add_new_command(&debug_group, &coewrite_cmd);
 	cmd_add_new_command(&debug_group, &cmd_mreg_cmd);
 	cmd_add_new_command(&debug_group, &cmd_dcn_test_cmd);
-
+    cmd_add_new_command(&debug_group, &cmd_ping_cmd);
 
 }
