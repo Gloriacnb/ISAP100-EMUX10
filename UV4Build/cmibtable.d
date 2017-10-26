@@ -7,4 +7,4 @@
 .\UV4Build\cmibtable.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
 .\UV4Build\cmibtable.o: .\Src\SNMP\Depend\CErrorValueDefine.h
 .\UV4Build\cmibtable.o: .\Src\SNMP\SNMPMib\include\Mib_define.h
-.\UV4Build\cmibtable.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\string.h
+.\UV4Build\cmibtable.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\string.h

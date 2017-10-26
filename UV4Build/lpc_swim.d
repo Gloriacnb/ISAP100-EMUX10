@@ -1,7 +1,7 @@
 .\UV4Build\lpc_swim.o: ./Src/lpc/source/lpc_swim.c
 .\UV4Build\lpc_swim.o: .\Src\lpc\include\lpc_swim.h
 .\UV4Build\lpc_swim.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\lpc_swim.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\lpc_swim.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\stdint.h
 .\UV4Build\lpc_swim.o: .\Src\lpc\include\lpc_fonts.h
 .\UV4Build\lpc_swim.o: .\Src\lpc\include\lpc_types.h
 .\UV4Build\lpc_swim.o: .\Src\lpc\include\lpc_colors.h

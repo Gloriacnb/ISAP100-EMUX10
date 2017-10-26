@@ -29,13 +29,13 @@ PortEth::PortEth(uint32 uid, uint8 chip, uint8 portsn, UETH_Config_Data_T* cfg, 
 	if( ConfigData->enable != 0 ) {
 		setAuto(ConfigData->autoAN, false);
 		setPause(ConfigData->pause, false);
-	//	setLinktype(ConfigData->linkType, false);
-	//	setPVID(ConfigData->pvid, false);
-	//	if( getLinktype() == 2 ) {
-	//		for (int i = 0; i < ConfigData->evidNumber; ++i) {
-	//			addEVID(ConfigData->evid[i]);
-	//		}
-	//	}
+		setLinktype(ConfigData->linkType, false);
+		setPVID(ConfigData->pvid, false);
+		if( getLinktype() == 2 ) {
+			for (int i = 0; i < ConfigData->evidNumber; ++i) {
+				addEVID(ConfigData->evid[i]);
+			}
+		}
 	}
 }
 
@@ -119,7 +119,7 @@ bool PortEth::setDescription(uint8* desc, uint32 len, bool save ) {
 	return storer->SaveData();
 }
 bool PortEth::setLinktype(uint8 type, bool save ) {
-	if( type == ConfigData->linkType ) {
+	if( (type == ConfigData->linkType) && save ) {
 		return true;
 	}
 	if( type == 1 ) {
@@ -139,13 +139,19 @@ bool PortEth::setLinktype(uint8 type, bool save ) {
 
 }
 bool PortEth::setPVID(uint16 vid, bool save ) {
-	if( vid == ConfigData->pvid ) {
+	if( (vid == ConfigData->pvid) && save ) {
 		return true;
 	}
 	board->getSwitch(chipID)->DeletePortMemberFromVLANGroup(ConfigData->pvid,portID);	  	//从原vlan组中移除port
 	board->getSwitch(chipID)->AddPortMemberToVLANGroup(vid, portID);						//加入到新VLAN组
 	board->getSwitch(chipID)->SetPortVID(portID, vid);										//设置PVID
 	board->getSwitch(chipID)->SetVLANTaggingMode(vid, portID,CSwitchBaseImpl::uiConstTaggingModeRemove);	//只移除TAG
+
+//	uint8 wanId = 4 + (portID % 2);
+//	board->getSwitch(chipID)->DeletePortMemberFromVLANGroup(ConfigData->pvid,wanId);	  	//从原vlan组中移除port
+//	board->getSwitch(chipID)->AddPortMemberToVLANGroup(vid, wanId);						//加入到新VLAN组
+//	board->getSwitch(chipID)->SetVLANTaggingMode(vid, wanId,CSwitchBaseImpl::uiConstTaggingModeInsert);	//只移除TAG
+
 
 	if( save ) {
 		ConfigData->pvid = vid;

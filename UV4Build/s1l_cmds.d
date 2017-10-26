@@ -1,7 +1,7 @@
 .\UV4Build\s1l_cmds.o: ./Src/MidWare/s1l/source/s1l_cmds.c
 .\UV4Build\s1l_cmds.o: .\Src\lpc\include\lpc_string.h
 .\UV4Build\s1l_cmds.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\s1l_cmds.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\s1l_cmds.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\stdint.h
 .\UV4Build\s1l_cmds.o: .\Src\lpc\include\lpc_line_parser.h
 .\UV4Build\s1l_cmds.o: .\Src\lpc\include\lpc_types.h
 .\UV4Build\s1l_cmds.o: .\Src\MidWare\s1l\include\s1l_line_input.h
@@ -12,4 +12,4 @@
 .\UV4Build\s1l_cmds.o: .\Src\lpc\include\lpc_types.h
 .\UV4Build\s1l_cmds.o: .\Src\MidWare\include\TerminalUart.h
 .\UV4Build\s1l_cmds.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\s1l_cmds.o: D:\WorkProgram\Keil\ARM\RV31\INC\rtl.h
+.\UV4Build\s1l_cmds.o: D:\WorkProgram\Keil_V4\ARM\RV31\INC\rtl.h

@@ -4,7 +4,7 @@
 .\UV4Build\mid_power_voltage.o: .\Src\lpc32xx\include\lpc32xx_gpio_driver.h
 .\UV4Build\mid_power_voltage.o: .\Src\lpc32xx\include\lpc32xx_gpio.h
 .\UV4Build\mid_power_voltage.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\mid_power_voltage.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\mid_power_voltage.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\stdint.h
 .\UV4Build\mid_power_voltage.o: .\Src\lpc32xx\include\lpc32xx_chip.h
 .\UV4Build\mid_power_voltage.o: .\Src\lpc\include\lpc_types.h
 .\UV4Build\mid_power_voltage.o: .\Src\Application\DeviceComponent\DeviceLocal.h

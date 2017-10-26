@@ -282,7 +282,7 @@ typedef struct {                        /* TX Status struct                  */
 #define PHY_HALFD_100M      0x2000      /* Half Duplex 100Mbit               */
 #define PHY_FULLD_10M       0x0100      /* Full Duplex 10Mbit                */
 #define PHY_HALFD_10M       0x0000      /* Half Duplex 10MBit                */
-#define PHY_AUTO_NEG        0x3000      /* Select Auto Negotiation           */
+#define PHY_AUTO_NEG        0x3100      /* Select Auto Negotiation           */
 
 #define LAN8700_DEF_ADR     (1<<8)//0x0000      /* Default PHY device address        */
 #define LAN8700_ID          0x00221513  /* PHY Identifier                    */

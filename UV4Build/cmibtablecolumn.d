@@ -13,4 +13,4 @@
 .\UV4Build\cmibtablecolumn.o: .\Src\SNMP\Depend\CCommonDefine.h
 .\UV4Build\cmibtablecolumn.o: ./Src/SNMP/SNMPMib/CMibTable.h
 .\UV4Build\cmibtablecolumn.o: ./Src/SNMP/SNMPMib/CMibEntry.h
-.\UV4Build\cmibtablecolumn.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\string.h
+.\UV4Build\cmibtablecolumn.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\string.h

@@ -214,7 +214,7 @@ bool CVCG::ifVCGAlarm(VCG_alarm_type_E sn) {
 	}
 	break;
 	case LaGR_SYNLoss:
-		if(RC6400_DeFrame_Syn_Alarm_Read(itsHardId) == 0) {
+		if(RC6400_GFP_DeFrame_Syn_Status_Read(itsHardId) == FALSE) {
 			return true;
 		}
 		break;

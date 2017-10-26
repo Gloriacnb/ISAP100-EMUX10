@@ -426,21 +426,6 @@
               <FileType>1</FileType>
               <FilePath>./Src/Lib/Net_lib.c</FilePath>
             </File>
-            <File>
-              <FileName>FS_ARM_L.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>./Src/Lib/FS_ARM_L.lib</FilePath>
-            </File>
-            <File>
-              <FileName>TCPD_ARM_L.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>./Src/Lib/TCPD_ARM_L.lib</FilePath>
-            </File>
-            <File>
-              <FileName>TCP_ARM_L.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>./Src/Lib/TCP_ARM_L.lib</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>

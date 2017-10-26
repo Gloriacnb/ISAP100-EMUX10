@@ -2,7 +2,7 @@
 .\UV4Build\lpc_fonts.o: .\Src\lpc\include\lpc_helvr10.h
 .\UV4Build\lpc_fonts.o: .\Src\lpc\include\lpc_fonts.h
 .\UV4Build\lpc_fonts.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\lpc_fonts.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\lpc_fonts.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\stdint.h
 .\UV4Build\lpc_fonts.o: .\Src\lpc\include\lpc_x5x7.h
 .\UV4Build\lpc_fonts.o: .\Src\lpc\include\lpc_x6x13.h
 .\UV4Build\lpc_fonts.o: .\Src\lpc\include\lpc_winfreesystem14x16.h

@@ -92,6 +92,10 @@ uint32 RTL8306ESwitch::InitializeSwitch(uint32 uiConfig) {
 	info.link = 1;
 	rtk_port_macForceLinkExt0_set(MODE_EXT_RMII, &info);
 
+	for (uint32 i = 0; i < 6/*GetEthernetPortNumber()*/; i++) {
+		rtl8306e_portLearningAbility_set(i, 0); //关闭所有端口的学习功能，实现物理隔离
+	}
+
 //	     for (int i = 0; i < 6; ++i) {
 //			 rtl8306e_mib_reset(i);										    //重启WAN口计数
 //			 rtl8306e_mibUnit_set(i,RTL8306_MIB_CNT1,RTL8306_MIB_BYTE);		//设置WAN口发方向 字节计数
@@ -210,6 +214,10 @@ uint32 RTL8306ESwitch::InitializeTagAwareMode(void) {
 	rtk_vlan_init();
 	rtl_VLANEnable_set(1);
 	rtl8306e_vlan_IgrFilterEnable_set(1); //设置入口过滤使能
+	SetPortAcceptFrameType(4,1);
+	SetPortAcceptFrameType(5,1);
+	rtl8306e_vlan_tagInsert_set(4, 0x3F);
+	rtl8306e_vlan_tagInsert_set(5, 0x3F);
 	return CErrorValueDefine::uiConstReturnSuccess;
 }
 
@@ -389,14 +397,14 @@ uint32 RTL8306ESwitch::AddPortMemberToVLANGroup(uint32 uiVID, uint32 uiPort) {
 	if (rtk_vlan_get(uiVID, &mbrmsk_val, &untagmsk_val, &fid_val)
 			== RT_ERR_OK) {
 		mbrmsk_val.bits[0] |= (1 << uiPort);	//指定端口加入指定组
-		mbrmsk_val.bits[0] |= (1 << 5);			//WAN口同时加入指定组
+		mbrmsk_val.bits[0] |= (1 << (4+uiPort%2));			//WAN口同时加入指定组
 		if (rtk_vlan_set(uiVID, mbrmsk_val, untagmsk_val, fid_val)
 				!= RT_ERR_OK) {
 			return CErrorValueDefine::uiConstReturnFailed;
 		}
 	} else {
 		mbrmsk_val.bits[0] |= (1 << uiPort);
-		mbrmsk_val.bits[0] |= (1 << 5);
+		mbrmsk_val.bits[0] |= (1 << (4+uiPort%2));
 		untagmsk_val.bits[0] = 0;
 		if (rtk_vlan_set(uiVID, mbrmsk_val, untagmsk_val, fid_val)
 				!= RT_ERR_OK) {

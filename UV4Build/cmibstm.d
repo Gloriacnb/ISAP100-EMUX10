@@ -8,7 +8,7 @@
 .\UV4Build\cmibstm.o: .\Src\SNMP\Depend\CSnmpConstDefine.h
 .\UV4Build\cmibstm.o: .\Src\SNMP\Depend\CErrorValueDefine.h
 .\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\include\Mib_define.h
-.\UV4Build\cmibstm.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\string.h
+.\UV4Build\cmibstm.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\string.h
 .\UV4Build\cmibstm.o: ./Src/SNMP/SNMPMib/Private/InterfaceGroup/CMibSTMConfig.h
 .\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibTable.h
 .\UV4Build\cmibstm.o: .\Src\SNMP\SNMPMib\CMibTableColumn.h

@@ -17,7 +17,7 @@
 .\UV4Build\cmibdebug.o: .\Src\MidWare\include\Mid_FlashData.h
 .\UV4Build\cmibdebug.o: .\Src\lpc\include\lpc_nandflash_params.h
 .\UV4Build\cmibdebug.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\cmibdebug.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\cmibdebug.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\stdint.h
 .\UV4Build\cmibdebug.o: .\Src\Application\DeviceComponent\Chips\Lpc3250upload.h
 .\UV4Build\cmibdebug.o: .\Src\UpDataMain\cfg_save_nand.h
 .\UV4Build\cmibdebug.o: .\Src\lpc\include\lpc_types.h
@@ -28,4 +28,4 @@
 .\UV4Build\cmibdebug.o: .\Src\MidWare\include\MidoptDCC.h
 .\UV4Build\cmibdebug.o: .\Src\Application\Tools\EthMemory.h
 .\UV4Build\cmibdebug.o: .\Src\Application\Task\Task_define.h
-.\UV4Build\cmibdebug.o: D:\WorkProgram\Keil\ARM\RV31\INC\rtl.h
+.\UV4Build\cmibdebug.o: D:\WorkProgram\Keil_V4\ARM\RV31\INC\rtl.h

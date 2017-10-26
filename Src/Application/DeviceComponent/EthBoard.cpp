@@ -82,12 +82,14 @@ CSwitchBaseImpl* EthBoard::getSwitch(int sn) {
 
 void EthBoard::RestoreDefauleConfig(void) {
 	memset( &storeData, 0, sizeof(storeData));
+	storeData.sw.mode = 2;
 	for( int i = 0; i < 8; i++ ) {
 		storeData.port[i].autoAN = 1;
 		storeData.port[i].enable = 1;
 		storeData.port[i].linkType = 1;
 		storeData.port[i].speed = 1;
 		storeData.port[i].duplex = 1;
+		storeData.port[i].pvid = 100*(i+1);
 	}
 	FlashDriver.SaveData();
 

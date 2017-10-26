@@ -97,10 +97,9 @@ UNS_32 conv_to_sector(UNS_32 block,
 #define MB_VCG_Config_Block_Start	Data_Part(6)
 #define MB_SDH_Config_Block_Start	Data_Part(7)
 #define SYS_TS_Cross_Block_Start	Data_Part(8)
-//#define SYS_InnerDCC_Block_Start	Data_Part(9)
-#define MB_ETH_Config_Block_Start	Data_Part(10)
 #define MB_FE1_Config_Block_Start	Data_Part(9)
 #define SYS_InnerDCC_Block_Start	Data_Part(12)
+#define MB_ETH_Config_Block_Start	Data_Part(13)
 
 extern Board_Slot_CFG_T board_slot_config;
 extern ISAP100_SAVE_T sysConfig;

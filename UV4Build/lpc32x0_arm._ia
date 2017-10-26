@@ -1,5 +1,5 @@
 --cpu ARM926EJ-S --pd "__RTX SETA 1" -g --apcs=interwork 
--I D:\WorkProgram\Keil\ARM\RV31\INC 
--I D:\WorkProgram\Keil\ARM\CMSIS\Include 
--I D:\WorkProgram\Keil\ARM\Inc\Philips 
---pd "RAM_INTVEC SETA 1" --pd "REMAP SETA 1" --list ".\LPC32x0_arm.lst" --xref -o ".\UV4Build\LPC32x0_arm.o" --depend ".\UV4Build\LPC32x0_arm.d" "./Startup/LPC32x0_arm.s"
+-I D:\WorkProgram\Keil_V4\ARM\RV31\INC 
+-I D:\WorkProgram\Keil_V4\ARM\CMSIS\Include 
+-I D:\WorkProgram\Keil_V4\ARM\Inc\Philips 
+--pd "RAM_INTVEC SETA 1" --pd "REMAP SETA 1" --list ".\UV4Build\LPC32x0_arm.lst" --xref -o ".\UV4Build\LPC32x0_arm.o" --depend ".\UV4Build\LPC32x0_arm.d" "./Startup/LPC32x0_arm.s"

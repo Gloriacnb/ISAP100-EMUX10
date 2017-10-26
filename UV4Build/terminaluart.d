@@ -1,7 +1,7 @@
 .\UV4Build\terminaluart.o: ./Src/MidWare/TerminalUart.c
 .\UV4Build\terminaluart.o: .\Src\lpc\include\lpc_irq_fiq.h
 .\UV4Build\terminaluart.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\terminaluart.o: D:\WorkProgram\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\UV4Build\terminaluart.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\stdint.h
 .\UV4Build\terminaluart.o: .\Src\lpc\include\lpc_arm922t_cp15_driver.h
 .\UV4Build\terminaluart.o: .\Src\lpc\include\lpc_types.h
 .\UV4Build\terminaluart.o: .\Src\lpc\include\lpc_arm922t_arch.h
@@ -19,4 +19,4 @@
 .\UV4Build\terminaluart.o: .\Src\lpc\include\lpc_types.h
 .\UV4Build\terminaluart.o: .\Src\MidWare\include\TerminalUart.h
 .\UV4Build\terminaluart.o: .\Src\lpc\include\lpc_types.h
-.\UV4Build\terminaluart.o: D:\WorkProgram\Keil\ARM\RV31\INC\rtl.h
+.\UV4Build\terminaluart.o: D:\WorkProgram\Keil_V4\ARM\RV31\INC\rtl.h
