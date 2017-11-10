@@ -1449,7 +1449,7 @@ static BOOL_32 cmd_coewrite(void) {
 	uint16 temp[8] = {0};
 
 	if( parse_get_entry_count() == 5 ) {
-		printf("\n����0x1234��ʽ��8�������ݣ��Կո���.\n");
+		printf("\n输入格式0x1234的1-8个字节做为写入值，以回车结束.\n");
 		static char buff[64] = "0x1111 0x2222 0x3333 0x4444";
 		int bytes = 0;
 		memset(buff, '\0', sizeof(buff));

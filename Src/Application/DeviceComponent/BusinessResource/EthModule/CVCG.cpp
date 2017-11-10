@@ -64,7 +64,7 @@ CVCG::CVCG(int sn, uint32 uid, vcg_config_T* data,  CMSSave* store) {
 	name = "VCG-" + CPPTools::number2string(sn+1);
 
 	/*
-	 * »Ö¸´ÅäÖÃ
+	 * ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	RC6400_VCAT_En_Tx_Set(itsHardId, itsConfig->enable);
 	RC6400_VCAT_En_Rx_Set(itsHardId, itsConfig->enable);
@@ -126,8 +126,8 @@ bool CVCG::delMember(uint32 uid) {
 		DeleteTu12FromVCGSimple(pvc12->GetHid());
 
 		/*
-		 * Ôö¼Ó¶Ôµ±Ç°vc12µÄÍ¬±àºÅvc12Á¬½ÓÇé¿öµÄÅĞ¶Ï
-		 * Ö»ÓĞµ±Í¬±àºÅvc12Î´Õ¼ÓÃÊ±£¬²Å½«¿Õ·Ö½»²æÉèÖÃÎªbypass
+		 * ï¿½ï¿½ï¿½Ó¶Ôµï¿½Ç°vc12ï¿½ï¿½Í¬ï¿½ï¿½ï¿½vc12ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½
+		 * Ö»ï¿½Ğµï¿½Í¬ï¿½ï¿½ï¿½vc12Î´Õ¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Å½ï¿½ï¿½Õ·Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªbypass
 		 */
 		uint32 Partner = pvc12->getPartnerUID();
 		CVC12* partnervc12 = CSTM::GetVc12Object(Partner);
@@ -137,7 +137,7 @@ bool CVCG::delMember(uint32 uid) {
 		if( !(partnervc12->ifOccupied()) ) {
 			RC7880Vc4UnitDxcConfigWrite(pvc12->GetHid(), direct_AB);
 		}
-		RC6400_TU12_Bus_Sel_Mode_Rx_Set(pvc12->GetHid(), 1); //É¾³ı°ó¶¨Í¬Ê±½â³ıSNCP
+		RC6400_TU12_Bus_Sel_Mode_Rx_Set(pvc12->GetHid(), 1); //É¾ï¿½ï¿½ï¿½ï¿½Í¬Ê±ï¿½ï¿½ï¿½SNCP
 
 		delete it->second;
 		mapMember.erase(uid);
@@ -182,7 +182,7 @@ bool CVCG::clrMember(void) {
 
 bool CVCG::ifVCGAlarm(VCG_alarm_type_E sn) {
 
-	/*¶Ë¿Ú ½ûÖ¹ºóÎŞ¸æ¾¯*/
+	/*ï¿½Ë¿ï¿½ ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½Ş¸æ¾¯*/
 	if( itsConfig->enable == 0 ) {
 		return false;
 	}

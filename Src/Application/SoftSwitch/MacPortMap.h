@@ -15,7 +15,7 @@
 class PriPacket;
 class MacPortMap {
 public:
-	const static uint16 LiveSecs = 300;
+	const static uint16 LiveSecs = 3000;
 
 	MacPortMap();
 	virtual ~MacPortMap();
