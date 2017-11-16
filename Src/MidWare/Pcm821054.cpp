@@ -19,21 +19,21 @@ uint32 loopCounter = 0;
 extern volatile uint32 timer32_1_counter;
 
 
-/* ÄÚ²¿¹¦ÄÜº¯ÊýÉùÃ÷ */
-void HardReset821054(uint8 slot);					//¸´Î»ËùÓÐÐ¾Æ¬
+/* ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Üºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+void HardReset821054(uint8 slot);					//ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Ð¾Æ¬
 bool ChipOnBoard(int chipID);
 void InitVoiceChannelStruct(STVoiceChannel stVC[]);
 void InitVoiceChannelStructChipDes(int sn, int chipID, int channelID);
 extern "C"  uint8 GetVoiceChannelType(int chipID, int channelID);
-void InitChannal(int chipID);				//·ÖÅäÊ±Ï¶
-uint32 SelectClock(int chipID);				//ÉèÖÃMCLK
-uint32 SetPowerUp(int chipID);					//½ûÄÜPowerDown
-uint32 SetSb123Direction(int chipID);			//ÉèÖÃSB1Êä³ö£¬SB2¡¢SB3ÎªÊäÈë
-void SetHardwareRingTripEnable(int chipID); //Ê¹ÄÜ»·»Ø¹¦ÄÜ
+void InitChannal(int chipID);				//ï¿½ï¿½ï¿½ï¿½Ê±Ï¶
+uint32 SelectClock(int chipID);				//ï¿½ï¿½ï¿½ï¿½MCLK
+uint32 SetPowerUp(int chipID);					//ï¿½ï¿½ï¿½ï¿½PowerDown
+uint32 SetSb123Direction(int chipID);			//ï¿½ï¿½ï¿½ï¿½SB1ï¿½ï¿½ï¿½ï¿½ï¿½SB2ï¿½ï¿½SB3Îªï¿½ï¿½ï¿½ï¿½
+void SetHardwareRingTripEnable(int chipID); //Ê¹ï¿½Ü»ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½
 void openDigitalGain(int chipID);
 
 ///*
-// * Í¨¹ýCPLD²Ù×÷ÐÅÁîbit
+// * Í¨ï¿½ï¿½CPLDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bit
 // */
 //int GetSignalA(int sn);
 //int GetSignalB(int sn);
@@ -41,7 +41,7 @@ void openDigitalGain(int chipID);
 //void SetSignalB( int sn, uint8 newValue );
 //
 ///*
-// * Í¨¹ý821054´¦ÀíÐÅÁî
+// * Í¨ï¿½ï¿½821054ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 // */
 //int GetSHK1(int sn);
 //int GetSHK2(int sn);
@@ -49,7 +49,7 @@ void openDigitalGain(int chipID);
 //void SetFR(int sn, int newValue);
 //
 ///*
-// * ÐÅÁî´¦ÀíÁ÷³ÌÊµÏÖ
+// * ï¿½ï¿½ï¿½î´¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
 // */
 //void FXSSignalFromCpldToPcm(int sn, int SrcSignal);
 //void FXSSignalFromPcmToCpld(int sn, int SrcSignal);
@@ -57,19 +57,19 @@ void openDigitalGain(int chipID);
 //void FXOSignalFromPcmToCpld(int sn, int SrcSignal);
 
 /*
- * ÒÔÐ¾Æ¬Îªµ¥Î»³õÊ¼»¯
- * ÉèÖÃMCLKÎª2.048M
- * SB1ÎªÊä³ö£¬SB2¡¢SB3ÎªÊäÈë
- * Ê¹ÄÜÓ²¼þ»·»Ø
- * È¥ÄÜµôµçÄ£Ê½
- * ÎªËùÓÐÍ¨µÀ·ÖÅäÊ±Ï¶
- * Îª»°Â·Í¨µÀ³õÊ¼»¯Êý¾Ý½á¹¹
+ * ï¿½ï¿½Ð¾Æ¬Îªï¿½ï¿½Î»ï¿½ï¿½Ê¼ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½MCLKÎª2.048M
+ * SB1Îªï¿½ï¿½ï¿½ï¿½ï¿½SB2ï¿½ï¿½SB3Îªï¿½ï¿½ï¿½ï¿½
+ * Ê¹ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * È¥ï¿½Üµï¿½ï¿½ï¿½Ä£Ê½
+ * Îªï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Ï¶
+ * Îªï¿½ï¿½Â·Í¨ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ý½á¹¹
  */
-void Init821054(uint8 slot) {				  //821054³õÊ¼»¯
+void Init821054(uint8 slot) {				  //821054ï¿½ï¿½Ê¼ï¿½ï¿½
 	int i;
 	uint8 baseCh = slot << 2;
-	InitVoiceChannelStruct(stVC);		//Êý¾Ý½á¹¹³õÊ¼»¯
-	HardReset821054(slot);				//821054Ó²¼þ¸´Î»
+	InitVoiceChannelStruct(stVC);		//ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½Ê¼ï¿½ï¿½
+	HardReset821054(slot);				//821054Ó²ï¿½ï¿½ï¿½ï¿½Î»
 //	readIDTChipCoeRamBlock(spichannel, channel, block, data);
     for( i = 1; i <= 2; i++ ) {
 		if( ChipOnBoard(baseCh+i) ) {
@@ -98,9 +98,9 @@ void Init821054(uint8 slot) {				  //821054³õÊ¼»¯
 
 //void SignalProcess(int chNumber) {
 //	for( int i = DEFStartVc; i < DEFStartVc+chNumber; i++ ) {
-//		if( stVC[i].State != 0 ) { //Ö»´¦ÀíÓÐÐ§Í¨µÀ
+//		if( stVC[i].State != 0 ) { //Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§Í¨ï¿½ï¿½
 //
-//			/*ÏÈ²É¼¯ÏÂÐÐ*/
+//			/*ï¿½È²É¼ï¿½ï¿½ï¿½ï¿½ï¿½*/
 //			int Abit = GetSignalA(i);
 ////			stVC[i].led = Abit;
 //			int Bbit = GetSignalB(i);
@@ -113,7 +113,7 @@ void Init821054(uint8 slot) {				  //821054³õÊ¼»¯
 ////					SetVFLED(i, DEF_LED_OFF);
 ////				}
 //				stVC[i].BakAB = tempSignal;
-//				/* ´¦ÀíÏÂÐÐÐÅÁî*/
+//				/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 //				if( stVC[i].Type == DEF_VFType_FXS ) {
 //					FXSSignalFromCpldToPcm(i, tempSignal);
 //				}
@@ -125,13 +125,13 @@ void Init821054(uint8 slot) {				  //821054³õÊ¼»¯
 //				}
 //			}
 //
-//			/*ÔÙ²É¼¯ÉÏÐÐ*/
+//			/*ï¿½Ù²É¼ï¿½ï¿½ï¿½ï¿½ï¿½*/
 //			int SHK1 = GetSHK1(i);
 //			int SHK2 = GetSHK2(i);
 //			tempSignal = DEFMakeSHK12(SHK1, SHK2);
 //			if( tempSignal != stVC[i].BakSHK ) {
 //				stVC[i].BakSHK = tempSignal;
-//				/* ´¦ÀíÉÏÐÐÐÅÁî */
+//				/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 //				if( stVC[i].Type == DEF_VFType_FXS ) {
 //					FXSSignalFromPcmToCpld(i, tempSignal);
 ////					stVC[i].led &= SHK2;
@@ -172,9 +172,9 @@ void Init821054(uint8 slot) {				  //821054³õÊ¼»¯
 
 
 /*
- * Í¨¹ýCPLD¼Ä´æÆ÷¸´Î»ËùÓÐ821054
+ * Í¨ï¿½ï¿½CPLDï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½821054
  */
-void HardReset821054(uint8 slot) {  //821054µÄÓ²¼þ¸´Î»
+void HardReset821054(uint8 slot) {  //821054ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ï¿½Î»
 	WriteCPLDRegister(slot,1,0);
 	for(int i = 0; i < 200000 ; i++);
 	WriteCPLDRegister(slot,1,1);
@@ -182,7 +182,7 @@ void HardReset821054(uint8 slot) {  //821054µÄÓ²¼þ¸´Î»
 }
 
 /*
- * ÉèÖÃÎªsingle clock  cs = 011
+ * ï¿½ï¿½ï¿½ï¿½Îªsingle clock  cs = 011
  */
 uint32 SelectClock(int chipID) {
 	if( WriteIdtChipGlbRegister(chipID, IDT_GREG_CODEC_Parameter, Bin(00011000)) < 0 ) {
@@ -192,10 +192,10 @@ uint32 SelectClock(int chipID) {
 }
 
 /*
- * 4Â·SB1ÓÃ×ö4Â·»°Â·µÄLEDÖ¸Ê¾£¬ÉèÖÃÎªÊä³ö£¨µÍµãµÆ£©
- * SB2-1¡¢SB3-1¡¢SB2-2 ÓÃ×öµÚÒ»¸ö»°Â·Ä£¿éÀàÐÍÊ¶±ð£¬ÉèÖÃÎªÊäÈë
- * SB2-3¡¢SB3-3¡¢SB2-4 ÓÃ×öµÚ¶þ¸ö»°Â·Ä£¿éÀàÐÍÊ¶±ð£¬ÉèÖÃÎªÊäÈë
- * Ê£ÓàµÄ SB3-2¡¢SB3-4±£Áô£¬ÉèÖÃÎªÊäÈë
+ * 4Â·SB1ï¿½ï¿½ï¿½ï¿½4Â·ï¿½ï¿½Â·ï¿½ï¿½LEDÖ¸Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Æ£ï¿½
+ * SB2-1ï¿½ï¿½SB3-1ï¿½ï¿½SB2-2 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Â·Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
+ * SB2-3ï¿½ï¿½SB3-3ï¿½ï¿½SB2-4 ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Â·Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
+ * Ê£ï¿½ï¿½ï¿½ SB3-2ï¿½ï¿½SB3-4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
  */
 uint32 SetSb123Direction(int chipID) {
 	if( WriteIdtChipGlbRegister(chipID, IDT_GREG_SB1_Control_Status, 0xff) < 0 ) {
@@ -216,7 +216,7 @@ void SetHardwareRingTripEnable(int chipID) {
 		return ;
 	}
 	ucTemp |= (1 << 3);
-	WriteIdtChipGlbRegister(chipID, IDT_GREG_Ring_Trip, ucTemp);     //1ÎªÊ¹ÄÜ 0Îª¹Ø±Õ
+	WriteIdtChipGlbRegister(chipID, IDT_GREG_Ring_Trip, ucTemp);     //1ÎªÊ¹ï¿½ï¿½ 0Îªï¿½Ø±ï¿½
 }
 
 void openDigitalGain(int chipID) {
@@ -263,14 +263,14 @@ void InitChannal(int chipID) {
 	for( int i = DEF_Min_ChannelID; i <= DEF_Max_ChannelID; i++ ) {
 		WriteIdtChipLocRegister(chipID, i, IDT_LREG_Transmit_Timeslot, TransmitReceiveTSBase);
 		WriteIdtChipLocRegister(chipID, i, IDT_LREG_Recieve_Timeslot, TransmitReceiveTSBase);
-		WriteIdtChipLocRegister(chipID, i, IDT_LREG_DSH_GK_Debounce, 0x0a); //SI1 È¥¶¶20ms
+		WriteIdtChipLocRegister(chipID, i, IDT_LREG_DSH_GK_Debounce, 0x0a); //SI1 È¥ï¿½ï¿½20ms
 		InitVoiceChannelStructChipDes(TransmitReceiveTSBase, chipID, i);
 		TransmitReceiveTSBase++;//TransmitReceiveTSBase += 2;
 	}
 }
 
 
-uint32 SetPowerUp(int chipID) {					  //ÉèÖÃPDÎªÕý³£Ä£Ê½
+uint32 SetPowerUp(int chipID) {					  //ï¿½ï¿½ï¿½ï¿½PDÎªï¿½ï¿½ï¿½ï¿½Ä£Ê½
 	for(int i = DEF_Min_ChannelID; i <= DEF_Max_ChannelID; i++ ) {
 		if( WriteIdtChipLocRegister(chipID, i, IDT_LREG_Gain_Powerdown_Cutoff, 0) < 0 ) {
 			return FALSE;
@@ -289,7 +289,7 @@ bool ChipOnBoard(int chipID) {
 	return false;
 }
 
-/* ¹Ì¶¨ÅäÖÃ £¬ÔËÐÐÖÐ²»ÐèÒª¸Ä±ä £¬ ËùÓÐVCÒ»ÆðÅäÖÃ */
+/* ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½Òªï¿½Ä±ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½VCÒ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 void InitVoiceChannelStruct(STVoiceChannel pVc[]) {
 	memset(pVc, 0 , sizeof(stVC));
 	for( int i = 0; i < DEF_MAX_VF_NUM; i++ ) {
@@ -300,7 +300,7 @@ void InitVoiceChannelStruct(STVoiceChannel pVc[]) {
 }
 
 /*
- * ÔËÐÐÊ±£¬ÒÔ»°Â·Îªµ¥Î»¼ì²âÄ£¿éÀàÐÍ²¢¼ÇÂ¼
+ * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ô»ï¿½Â·Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½Â¼
  */
 void InitVoiceChannelStructChipDes(int sn, int chipID, int channelID) {
 	stVC[sn].ChipID = chipID;
@@ -426,7 +426,7 @@ void SetFR(int sn, int newValue) {
 //	int Abit = DEFGetA(SrcSignal);
 //	int Bbit = DEFGetB(SrcSignal);
 //	if( stVC[sn].mode == 0 ) {
-//		/* ×Ô¶¯µç»° */
+//		/* ï¿½Ô¶ï¿½ï¿½ç»° */
 //		if( Abit == 0 ) {
 //			SetRC(sn, 1);
 //			SetFR(sn, 1);
@@ -437,17 +437,17 @@ void SetFR(int sn, int newValue) {
 //		}
 //	}
 //	else {
-//		/* ÈÈÏß */
+//		/* ï¿½ï¿½ï¿½ï¿½ */
 //		if( Abit == 0 ) {
 //			switch( stVC[sn].RCFlag ) {
 //			case 0:
-//			/* µÚÒ»´Î½øÈëÈÈÏßRC´¦Àí³ÌÐò */
+//			/* ï¿½ï¿½Ò»ï¿½Î½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 //				stVC[sn].startTime = timer32_1_counter;
 //				SetRC(sn, 1);
 //				stVC[sn].RCFlag = 1;
 //				break;
 //			case 1: {
-//				/* 1s ÏìÁåÊ±¼ä */
+//				/* 1s ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ */
 //				uint32 t = (timer32_1_counter - stVC[sn].startTime) % 50;
 //				if( t >= 10 ) {
 //					SetRC(sn, 0);
@@ -456,7 +456,7 @@ void SetFR(int sn, int newValue) {
 //			}
 //				break;
 //			case 2: {
-//				/* 4s Í£Ö¹ÏìÁåÊ±¼ä */
+//				/* 4s Í£Ö¹ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ */
 //				uint32 t = (timer32_1_counter - stVC[sn].startTime) % 50;
 //				if( t < 10 ) {
 //					SetRC(sn, 1);

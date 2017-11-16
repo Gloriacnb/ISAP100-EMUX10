@@ -378,7 +378,7 @@
             <useFile>0</useFile>
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x08000000</DataAddressRange>
-            <ScatterFile>.\UV4Build\ISAP100_Realese.sct</ScatterFile>
+            <ScatterFile>.\ISAP100_Realese.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -432,11 +432,6 @@
           <GroupName>Src_RTX_Config</GroupName>
           <Files>
             <File>
-              <FileName>File_Config.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>./Src/RTX_Config/File_Config.c</FilePath>
-            </File>
-            <File>
               <FileName>Net_Config.c</FileName>
               <FileType>1</FileType>
               <FilePath>./Src/RTX_Config/Net_Config.c</FilePath>
@@ -485,6 +480,11 @@
               <FileName>SNMP_MIB.c</FileName>
               <FileType>1</FileType>
               <FilePath>./Src/RTX_Config/SNMP_MIB.c</FilePath>
+            </File>
+            <File>
+              <FileName>File_Config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\RTX_Config\File_Config.c</FilePath>
             </File>
           </Files>
         </Group>

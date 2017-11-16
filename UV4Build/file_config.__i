@@ -2,4 +2,4 @@
 -I D:\WorkProgram\Keil_V4\ARM\RV31\INC 
 -I D:\WorkProgram\Keil_V4\ARM\CMSIS\Include 
 -I D:\WorkProgram\Keil_V4\ARM\Inc\Philips 
--DSTDIO -o ".\UV4Build\file_config.o" --omf_browse ".\UV4Build\file_config.crf" --depend ".\UV4Build\file_config.d" "./Src/RTX_Config/File_Config.c"
+-DSTDIO -o ".\UV4Build\file_config.o" --omf_browse ".\UV4Build\file_config.crf" --depend ".\UV4Build\file_config.d" "Src\RTX_Config\File_Config.c"
