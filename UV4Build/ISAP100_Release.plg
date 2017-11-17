@@ -4,10 +4,29 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 D:\EclipseWorkspace\ISAP100_Realese\ISAP100_Realese.uvproj
-Project File Date:  11/15/2017
+Project File Date:  11/16/2017
 
 <h2>Output:</h2>
 Build target 'LPC3250'
+compiling TerminalUart.c...
+compiling CVFPort.cpp...
+linking...
+Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
+User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
+".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC3250'
+compiling fixaddr.c...
+linking...
+Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
+User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
+".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC3250'
+linking...
+Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
+User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
+".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC3250'
+compiling CVFPort.cpp...
 linking...
 Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
 User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf

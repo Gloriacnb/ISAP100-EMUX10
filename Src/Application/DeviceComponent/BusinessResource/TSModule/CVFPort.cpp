@@ -35,10 +35,10 @@ static uint16 sndgain[AD_MAX]={
 	0x4F73, 0x4B01, 0x46CF, 0x42D9, 0x7DEB, 0x76E0, 0x703A, 0x69F2,
 	0x6405, 0x5E6D, 0x5925, 0x5428, 0x4F73, 0x4B01, 0x46CF, 0x42D9,
 	0x3F1C, 0x3B94, 0x383F, 0x3519, 0x3221, 0x2F53, 0x2CAD, 0x2A2D,
-	0x27D1, 0x2597, 0x237D, 0x2181, 0xf990, 0x1FA1, 0x1DDC, 0x1C30,
-	0xfae4, 0xfb30, 0xfb74, 0xfbb4, 0xfbf0, 0xfc28, 0xfc63, 0xfc98,
-	0x1A9C, 0x191F, 0x17B8, 0x1664, 0x1523, 0x13F5, 0x12D7, 0x11C9,
-	0x10CA, 0x1009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,
+	0x27D1, 0x2597, 0x237D, 0x2181, 0x1FA1, 0x1DDC, 0x1C30, 0x1A9C,
+	0x191F, 0x17B8, 0x1664, 0x1523, 0x13F5, 0x12D7, 0x11C9, 0x10CA,
+	0x1009, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,
+	0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,
 };//-14dBm0~+17.5dBm0
 
 //static uint16 rcvgain[DA_MAX]={
@@ -61,7 +61,7 @@ static uint16 rcvgain[DA_MAX]={
 	0x00D1, 0x00DE, 0x00EB, 0x00F9, 0x0108, 0x0117, 0x0128, 0x013A,
 	0x014C, 0x0160, 0x0175, 0x018B, 0x01A2, 0x01BB, 0x01D5, 0x01F1,
 	0x020F, 0x022E, 0x024F, 0x0272, 0x0297, 0x02BF, 0x02E8, 0x0315,
-};//-27.5dBm0~+4dBm0
+};//-14dBm0~+4dBm0
 //static int DGainCmd =0x08;
 //static int AGainCmd =0;
 CVFPort::CVFPort(uint32 userIndex, uint8 psn, VF_Port_Config_T* cfgData, VF_Group_Config_T* grpConfig, CMSSave* driver)  : RealPortBase(userIndex){
@@ -84,8 +84,8 @@ CVFPort::CVFPort(uint32 userIndex, uint8 psn, VF_Port_Config_T* cfgData, VF_Grou
 	setWorkMode(configData->work_mode, false);
 	setPolarTurn(configData->polar_turn, false);
 	if(( VFType== DEF_VFType_4W) || (VFType == DEF_VFType_2W)) {
-		setRcvGain(groupConfigData->rcv_gain, false);
-		setSndGain(groupConfigData->snd_gain, false);
+		setRcvGain(configData->rcv_gain, false);
+		setSndGain(configData->snd_gain, false);
 	}
 //	else if( VFType == DEF_VFType_MT ) {
 //        //���1.5V Ƶ��2100HZ
@@ -168,14 +168,14 @@ int CVFPort::setPolarTurn(uint8 en, bool save) {
 }
 
 uint8 CVFPort::getSndGain(void) {
-	return groupConfigData->snd_gain;
+	return configData->snd_gain;
 }
 int CVFPort::setSndGain(uint8 vl, bool save) {
 	uint8 chipID, ch;
 	getHinfo(uid, portSn, &chipID, &ch);
 	if( vl < AD_MAX ) {
 		if( sndgain[vl] == 0 ) {
-			groupConfigData->snd_gain = vl;//0/6
+			configData->snd_gain = vl;//0/6
 			if( save ) {
 				cfgDriver->SaveData();
 			}
@@ -192,7 +192,7 @@ int CVFPort::setSndGain(uint8 vl, bool save) {
 				ReadIdtChipLocRegister(chipID, ch, 8, &d);
 				WriteIdtChipLocRegister(chipID, ch, 8, d & ~0x20);
 			}
-			groupConfigData->snd_gain = vl;//0/6
+			configData->snd_gain = vl;//0/6
 			if( save ) {
 				cfgDriver->SaveData();
 			}
@@ -203,7 +203,7 @@ int CVFPort::setSndGain(uint8 vl, bool save) {
 }
 
 uint8 CVFPort::getRcvGain(void) {
-	return groupConfigData->rcv_gain;
+	return configData->rcv_gain;
 }
 
 int CVFPort::setRcvGain(uint8 vl, bool save) {
@@ -211,7 +211,7 @@ int CVFPort::setRcvGain(uint8 vl, bool save) {
 	getHinfo(uid, portSn, &chipID, &ch);
 	if( vl < DA_MAX ) {
 		if( rcvgain[vl] == 0 ) {
-			groupConfigData->rcv_gain = vl;//0/6
+			configData->rcv_gain = vl;//0/6
 			if( save ) {
 				cfgDriver->SaveData();
 			}
@@ -229,7 +229,7 @@ int CVFPort::setRcvGain(uint8 vl, bool save) {
 				ReadIdtChipLocRegister(chipID, ch, 8, &d);
 				WriteIdtChipLocRegister(chipID, ch, 8, d & ~0x10);
 			}
-			groupConfigData->rcv_gain = vl;//0/6
+			configData->rcv_gain = vl;//0/6
 			if( save ) {
 				cfgDriver->SaveData();
 			}
