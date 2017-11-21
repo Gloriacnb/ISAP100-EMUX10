@@ -51,6 +51,7 @@
 .\UV4Build\cextcard8vf.o: .\Src\MidWare\EZwellChipDriver\Chip8VFLogic.h
 .\UV4Build\cextcard8vf.o: .\Src\MidWare\include\Pcm821054.h
 .\UV4Build\cextcard8vf.o: ./Src/Application/DeviceComponent/SlotCard/CIsap100HardwareDesc.h
+.\UV4Build\cextcard8vf.o: .\Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.h
 .\UV4Build\cextcard8vf.o: .\Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPort.h
 .\UV4Build\cextcard8vf.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\map
 .\UV4Build\cextcard8vf.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\functional

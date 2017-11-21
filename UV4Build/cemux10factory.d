@@ -75,9 +75,11 @@
 .\UV4Build\cemux10factory.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\rw/_ioiter.h
 .\UV4Build\cemux10factory.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\rw/_numeric.h
 .\UV4Build\cemux10factory.o: D:\WorkProgram\Keil_V4\ARM\ARMCC\bin\..\include\rw/_punct.h
+.\UV4Build\cemux10factory.o: .\Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.h
 .\UV4Build\cemux10factory.o: .\Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h
 .\UV4Build\cemux10factory.o: .\Src\Application\DeviceComponent\SlotCard\CBaseCard.h
 .\UV4Build\cemux10factory.o: D:\WorkProgram\Keil_V4\ARM\RV31\INC\rtl.h
+.\UV4Build\cemux10factory.o: .\Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.h
 .\UV4Build\cemux10factory.o: .\Src\Application\DeviceComponent\SlotCard\CExtCard8Data.h
 .\UV4Build\cemux10factory.o: .\Src\Application\DeviceComponent\SlotCard\CBaseCard.h
 .\UV4Build\cemux10factory.o: .\Src\MidWare\EZwellChipDriver\ChipGluLogic.h

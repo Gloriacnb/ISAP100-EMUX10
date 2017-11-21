@@ -1396,6 +1396,16 @@
               <FileType>8</FileType>
               <FilePath>./Src/Application/DeviceComponent/SlotCard/CExtCard2BD.cpp</FilePath>
             </File>
+            <File>
+              <FileName>CExtCard8VFG.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>CExtCard8VFA.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1875,6 +1885,16 @@
               <FileName>CDataPort.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>./Src/Application/DeviceComponent/BusinessResource/TSModule/CDataPort.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>CVFPortA.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>CVFPortG.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp</FilePath>
             </File>
           </Files>
         </Group>

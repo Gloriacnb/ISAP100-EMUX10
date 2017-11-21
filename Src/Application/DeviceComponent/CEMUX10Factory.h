@@ -25,7 +25,7 @@ class CEMUX10Factory : public CInterfaceCardCreatFactory{
 	static const uint8 const8VFCardTypeID = TYPE_8VF;
 	static const uint8 const8DTCardTypeID = TYPE_8Data;
 	static const uint8 constPowerCardTypeID = TYPE_power;
-
+	static const uint8 const8VFGCardTypeID = TYPE_8VFG;
 
 public:
 	CEMUX10Factory();

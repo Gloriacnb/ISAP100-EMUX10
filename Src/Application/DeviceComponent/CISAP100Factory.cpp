@@ -12,7 +12,8 @@
 #include "CExtCard4E1.h"
 #include <string>
 #include <sstream>
-#include "CExtCard8VF.h"
+#include "CExtCard8VFG.h"
+#include "CExtCard8VFA.h"
 #include "CPowerCard.h"
 #include "CExtCard8Data.h"
 #include "CExtCard2BD.h"
@@ -54,7 +55,7 @@ CBaseCard* CISAP100Factory::make(int TypeID, CBaseSlot* slot) {
 				std::ostringstream s;
 				s << "8VF";
 				std::string name = s.str();
-				CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+				CExtCard8VF* card = new CExtCard8VFA((uint8)slot->GetSn(), name);
 				return card;
 			}
 			case constPowerCardTypeID: {
@@ -76,6 +77,13 @@ CBaseCard* CISAP100Factory::make(int TypeID, CBaseSlot* slot) {
 				s << "2B+D";
 				std::string name = s.str();
 				CExtCard2BD* card = new CExtCard2BD((uint8)slot->GetSn(), name);
+				return card;
+			}
+			case const8VFGCardTypeID: {
+				std::ostringstream s;
+				s << "8VFG";
+				std::string name = s.str();
+				CExtCard8VFG* card = new CExtCard8VFG((uint8)slot->GetSn(), name);
 				return card;
 			}
 		}
@@ -105,6 +113,9 @@ int CISAP100Factory::destroy(CBaseCard* card) {
 	}
 	else if( TypeID == const2BDCardTypeID) {
 		delete (CExtCard2BD*)card;
+	}
+	else if(TypeID == const8VFGCardTypeID ) {
+		delete (CExtCard8VFG*)card;
 	}
 	return -1;
 }

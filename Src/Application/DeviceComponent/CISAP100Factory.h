@@ -27,6 +27,7 @@ class CISAP100Factory: public CInterfaceCardCreatFactory {
 	static const uint8 const8DTCardTypeID = 0x52;
 	static const uint8 constPowerCardTypeID = TYPE_power;
 	static const uint8 const2BDCardTypeID = TYPE_2BD;
+	static const uint8 const8VFGCardTypeID = TYPE_8VFG;
 
 public:
 	CISAP100Factory();

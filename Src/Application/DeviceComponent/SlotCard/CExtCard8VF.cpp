@@ -9,7 +9,7 @@
 #include "Chip8VFLogic.h"
 #include "Pcm821054.h"
 #include "CIsap100HardwareDesc.h"
-#include "CVFPort.h"
+#include "CVFPortA.h"
 #include <string.h>
 #include "UID.h"
 #include <stdio.h>
@@ -40,20 +40,17 @@ CExtCard8VF::CExtCard8VF(uint8 slot, std::string& name) : CBaseCard(name, slot) 
 	}
 	Init821054(getSn());
 	InitExt8VFChip(slot, &configData);
-	for( int i = 0; i < portNumber; i++ ) {
-		ST_Time_Slot info = {slot+1, CIsap100HardwareDesc::slot_stbus_map[slot], CIsap100HardwareDesc::VF_port_channel_Map[i]};
-		uint32 uid = UID::makeUID(&info);
-
-		vf[i] = new CVFPort(uid, i,	&configData.port[i],&configData.group[i/4], &stroer);
-	}
+//	for( int i = 0; i < portNumber; i++ ) {
+//		ST_Time_Slot info = {slot+1, CIsap100HardwareDesc::slot_stbus_map[slot], CIsap100HardwareDesc::VF_port_channel_Map[i]};
+//		uint32 uid = UID::makeUID(&info);
+//
+//		vf[i] = new CVFPortA(uid, i,	&configData.port[i],&configData.group[i/4], &stroer);
+//	}
 
 	TaskMtWave = os_tsk_create_ex(T_MT_Wave, P_MT, this);
 }
 
 
-int CExtCard8VF::GetCartTypeID() {
-	return itsTypeID;
-}
 
 
 void CExtCard8VF::RestoreDefaultConfig(void) {

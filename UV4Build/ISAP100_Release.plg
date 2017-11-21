@@ -8,32 +8,427 @@ Project File Date:  11/16/2017
 
 <h2>Output:</h2>
 Build target 'LPC3250'
-compiling TerminalUart.c...
+compiling Chip8VFLogic.c...
+compiling CISAP100Factory.cpp...
+compiling DeviceLocal.cpp...
+compiling CEMUX10Factory.cpp...
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #20: identifier "CExtCard8VFG" is undefined
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #20: identifier "card" is undefined
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #79: expected a type specifier
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #18: expected a ")"
+compiling CTMFactory.cpp...
+compiling CExtCard8VF.cpp...
+compiling CMibVFPortTable.cpp...
 compiling CVFPort.cpp...
+./Src/Application/DeviceComponent/BusinessResource/TSModule/CVFPort.cpp(131): error:  #20: identifier "AD_MAX" is undefined
+./Src/Application/DeviceComponent/BusinessResource/TSModule/CVFPort.cpp(132): error:  #20: identifier "sndgain" is undefined
+./Src/Application/DeviceComponent/BusinessResource/TSModule/CVFPort.cpp(167): error:  #20: identifier "DA_MAX" is undefined
+./Src/Application/DeviceComponent/BusinessResource/TSModule/CVFPort.cpp(168): error:  #20: identifier "rcvgain" is undefined
+Target not created
+Build target 'LPC3250'
+compiling CEMUX10Factory.cpp...
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #20: identifier "CExtCard8VFG" is undefined
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #20: identifier "card" is undefined
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #79: expected a type specifier
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(67): error:  #18: expected a ")"
+compiling CExtCard8VF.cpp...
+./Src/Application/DeviceComponent/SlotCard/CExtCard8VF.cpp(47): error:  #322: object of abstract class type "CVFPortA" is not allowed:
+            pure virtual function "CVFPort::getRcvGain" has no overrider
+            pure virtual function "CVFPort::setRcvGain" has no overrider
+            pure virtual function "CVFPort::getSndGain" has no overrider
+            pure virtual function "CVFPort::setSndGain" has no overrider
+                vf[i] = new CVFPortA(uid, i,    &configData.port[i],&configData.group[i/4], &stroer);
+                            ^
+./Src/Application/DeviceComponent/SlotCard/CExtCard8VF.cpp: 0 warnings, 1 error
+compiling CMibVFPortTable.cpp...
+compiling CVFPort.cpp...
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #135: class "CVFPortA" has no member "CVFPortS"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #260-D: explicit type is missing ("int" assumed)
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(37): error:  #130: expected a "{"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "VFType" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_4W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_2W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(39): error:  #20: identifier "setRcvGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(40): error:  #20: identifier "setSndGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(48): error:  #298: inherited member is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(52): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(53): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(55): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(64): error:  #298: inherited member is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(68): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(69): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(71): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(73): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+.\Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.h(19): error:  #256: invalid redeclaration of type name "CExtCard8VF" (declared at line 19 of ".\Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h")
+./Src/Application/DeviceComponent/CISAP100Factory.cpp(86): error:  #20: identifier "CExtCard8VFG" is undefined
+./Src/Application/DeviceComponent/CISAP100Factory.cpp(86): error:  #20: identifier "card" is undefined
+./Src/Application/DeviceComponent/CISAP100Factory.cpp(86): error:  #79: expected a type specifier
+./Src/Application/DeviceComponent/CISAP100Factory.cpp(86): error:  #18: expected a ")"
+compiling DeviceLocal.cpp...
+compiling CEMUX10Factory.cpp...
+.\Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.h(19): error:  #256: invalid redeclaration of type name "CExtCard8VF" (declared at line 19 of ".\Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h")
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(68): error:  #20: identifier "CExtCard8VFG" is undefined
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(68): error:  #20: identifier "card" is undefined
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(68): error:  #79: expected a type specifier
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(68): error:  #18: expected a ")"
+compiling CTMFactory.cpp...
+compiling CExtCard8VF.cpp...
+./Src/Application/DeviceComponent/SlotCard/CExtCard8VF.cpp(47): error:  #322: object of abstract class type "CVFPortA" is not allowed:
+            pure virtual function "CVFPort::getRcvGain" has no overrider
+            pure virtual function "CVFPort::setRcvGain" has no overrider
+            pure virtual function "CVFPort::getSndGain" has no overrider
+            pure virtual function "CVFPort::setSndGain" has no overrider
+                vf[i] = new CVFPortA(uid, i,    &configData.port[i],&configData.group[i/4], &stroer);
+                            ^
+./Src/Application/DeviceComponent/SlotCard/CExtCard8VF.cpp: 0 warnings, 1 error
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #135: class "CVFPortA" has no member "CVFPortS"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #260-D: explicit type is missing ("int" assumed)
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(37): error:  #130: expected a "{"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "VFType" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_4W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_2W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(39): error:  #20: identifier "setRcvGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(40): error:  #20: identifier "setSndGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(48): error:  #298: inherited member is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(52): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(53): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(55): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(64): error:  #298: inherited member is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(68): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(69): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(71): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(73): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+compiling CEMUX10Factory.cpp...
+compiling CExtCard8VF.cpp...
+./Src/Application/DeviceComponent/SlotCard/CExtCard8VF.cpp(47): error:  #322: object of abstract class type "CVFPortA" is not allowed:
+            pure virtual function "CVFPort::getRcvGain" has no overrider
+            pure virtual function "CVFPort::setRcvGain" has no overrider
+            pure virtual function "CVFPort::getSndGain" has no overrider
+            pure virtual function "CVFPort::setSndGain" has no overrider
+                vf[i] = new CVFPortA(uid, i,    &configData.port[i],&configData.group[i/4], &stroer);
+                            ^
+./Src/Application/DeviceComponent/SlotCard/CExtCard8VF.cpp: 0 warnings, 1 error
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #135: class "CVFPortA" has no member "CVFPortS"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #260-D: explicit type is missing ("int" assumed)
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(37): error:  #130: expected a "{"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "VFType" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_4W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_2W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(39): error:  #20: identifier "setRcvGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(40): error:  #20: identifier "setSndGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(48): error:  #298: inherited member is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(52): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(53): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(55): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(64): error:  #298: inherited member is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(68): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(69): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(71): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(73): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CExtCard8VF.cpp...
+compiling CMibVFPortTable.cpp...
+compiling CVFPort.cpp...
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #135: class "CVFPortA" has no member "CVFPortS"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(36): error:  #260-D: explicit type is missing ("int" assumed)
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(37): error:  #130: expected a "{"
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "VFType" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_4W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_2W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(39): error:  #20: identifier "setRcvGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(40): error:  #20: identifier "setSndGain" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(52): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(53): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(55): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(68): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(69): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(71): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(73): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_4W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(38): error:  #20: identifier "DEF_VFType_2W" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(52): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(53): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(55): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(68): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(69): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(71): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(73): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(53): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(54): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(56): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(69): error:  #20: identifier "writeIDTChipCoeRamBlock" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(70): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(72): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(74): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(55): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(57): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(71): error:  #20: identifier "grpConfig" is undefined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(73): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(75): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CVFPortA.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(57): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(73): error:  #393: pointer to incomplete class type is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortA.cpp(75): error:  #393: pointer to incomplete class type is not allowed
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CVFPortA.cpp...
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.h(16): error:  #279: invalid destructor declaration
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #333: defining an implicitly declared member function is not allowed
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(53): error:  #302: function "CVFPortG::~CVFPortG" has already been defined
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CVFPortG.cpp...
+Src\Application\DeviceComponent\BusinessResource\TSModule\CVFPortG.cpp(56): error:  #265-D: member "CVFPort::Group" (declared at line 19) is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CExtCard8VF.cpp...
+compiling CMibVFPortTable.cpp...
+compiling CVFPort.cpp...
+compiling CVFPortA.cpp...
+compiling CVFPortG.cpp...
 linking...
-Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
+.\UV4Build\ISAP100_Release.axf: Error: L6200E: Symbol CVFPort::Group multiply defined (by cvfportg.o and cvfport.o).
+Target not created
+Build target 'LPC3250'
+compiling CVFPortG.cpp...
+linking...
+.\UV4Build\ISAP100_Release.axf: Error: L6218E: Undefined symbol CExtCard8VFG::CExtCard8VFG(unsigned char, std::basic_string<char, std::char_traits<char>, std::allocator<char>>&) (referred from cisap100factory.o).
+Target not created
+Build target 'LPC3250'
+compiling CExtCard8VFG.cpp...
+linking...
+.\UV4Build\ISAP100_Release.axf: Error: L6200E: Symbol T_MT_Wave(void*) multiply defined (by cextcard8vfg.o and cextcard8vf.o).
+Target not created
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+.\Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h(34): error:  #20: identifier "portNumber" is undefined
+./Src/Application/DeviceComponent/CISAP100Factory.cpp(58): error:  #322: object of abstract class type "CExtCard8VF" is not allowed:
+            function "CExtCard8VF::GetCartTypeID" is a pure virtual function
+                                CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+                                                        ^
+./Src/Application/DeviceComponent/CISAP100Factory.cpp: 0 warnings, 2 errors
+compiling CEMUX10Factory.cpp...
+.\Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h(34): error:  #20: identifier "portNumber" is undefined
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(47): error:  #322: object of abstract class type "CExtCard8VF" is not allowed:
+            function "CExtCard8VF::GetCartTypeID" is a pure virtual function
+                                CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+                                                        ^
+Src\Application\DeviceComponent\CEMUX10Factory.cpp: 0 warnings, 2 errors
+compiling CExtCard8VF.cpp...
+./Src/Application/DeviceComponent/SlotCard/CExtCard8VF.h(34): error:  #20: identifier "portNumber" is undefined
+compiling CExtCard8VFG.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h(34): error:  #20: identifier "portNumber" is undefined
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 32 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 32 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 33 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+compiling CExtCard8VFA.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h(34): error:  #20: identifier "portNumber" is undefined
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.h(18): error:  #260-D: explicit type is missing ("int" assumed)
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(15): error:  #276: name followed by "::" must be a class or namespace name
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(19): error:  #493: no instance of overloaded function "CExtCard8VFA::CExtCard8VFA" matches the specified type
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(19): error:  #130: expected a "{"
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 32 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 32 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 33 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+./Src/Application/DeviceComponent/CISAP100Factory.cpp(58): error:  #322: object of abstract class type "CExtCard8VF" is not allowed:
+            function "CExtCard8VF::GetCartTypeID" is a pure virtual function
+                                CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+                                                        ^
+./Src/Application/DeviceComponent/CISAP100Factory.cpp: 0 warnings, 1 error
+compiling CEMUX10Factory.cpp...
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(47): error:  #322: object of abstract class type "CExtCard8VF" is not allowed:
+            function "CExtCard8VF::GetCartTypeID" is a pure virtual function
+                                CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+                                                        ^
+Src\Application\DeviceComponent\CEMUX10Factory.cpp: 0 warnings, 1 error
+compiling CExtCard8VF.cpp...
+compiling CExtCard8VFG.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+compiling CExtCard8VFA.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.h(18): error:  #260-D: explicit type is missing ("int" assumed)
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(15): error:  #276: name followed by "::" must be a class or namespace name
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(19): error:  #493: no instance of overloaded function "CExtCard8VFA::CExtCard8VFA" matches the specified type
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(19): error:  #130: expected a "{"
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+.\Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.h(18): error:  #18: expected a ")"
+.\Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.h(18): error:  #283: qualified name is not allowed
+.\Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.h(18): error:  #65: expected a ";"
+./Src/Application/DeviceComponent/CISAP100Factory.cpp(59): error:  #289: no instance of constructor "CExtCard8VFA::CExtCard8VFA" matches the argument list
+compiling CEMUX10Factory.cpp...
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(47): error:  #322: object of abstract class type "CExtCard8VF" is not allowed:
+            function "CExtCard8VF::GetCartTypeID" is a pure virtual function
+                                CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+                                                        ^
+Src\Application\DeviceComponent\CEMUX10Factory.cpp: 0 warnings, 1 error
+compiling CExtCard8VFG.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+compiling CExtCard8VFA.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.h(18): error:  #260-D: explicit type is missing ("int" assumed)
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(15): error:  #276: name followed by "::" must be a class or namespace name
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(19): error:  #493: no instance of overloaded function "CExtCard8VFA::CExtCard8VFA" matches the specified type
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(19): error:  #130: expected a "{"
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+compiling CEMUX10Factory.cpp...
+Src\Application\DeviceComponent\CEMUX10Factory.cpp(47): error:  #322: object of abstract class type "CExtCard8VF" is not allowed:
+            function "CExtCard8VF::GetCartTypeID" is a pure virtual function
+                                CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+                                                        ^
+Src\Application\DeviceComponent\CEMUX10Factory.cpp: 0 warnings, 1 error
+compiling CExtCard8VFG.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+compiling CExtCard8VFA.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(15): error:  #276: name followed by "::" must be a class or namespace name
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CEMUX10Factory.cpp...
+compiling CExtCard8VFG.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFG.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+compiling CExtCard8VFA.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(15): error:  #276: name followed by "::" must be a class or namespace name
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::vf" (declared at line 36 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::configData" (declared at line 34 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(25): error:  #265-D: member "CExtCard8VF::stroer" (declared at line 35 of "Src\Application\DeviceComponent\SlotCard\CExtCard8VF.h") is inaccessible
+Target not created
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+compiling CEMUX10Factory.cpp...
+compiling CExtCard8VF.cpp...
+compiling CExtCard8VFG.cpp...
+compiling CExtCard8VFA.cpp...
+Src\Application\DeviceComponent\SlotCard\CExtCard8VFA.cpp(15): error:  #276: name followed by "::" must be a class or namespace name
+Target not created
+Build target 'LPC3250'
+compiling CExtCard8VFA.cpp...
+linking...
+Program Size: Code=668900 RO-data=64516 RW-data=4172 ZI-data=5806148  
+User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
+".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LPC3250'
+compiling CISAP100Factory.cpp...
+compiling CEMUX10Factory.cpp...
+linking...
+Program Size: Code=668972 RO-data=64516 RW-data=4172 ZI-data=5806140  
 User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
 ".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
 Build target 'LPC3250'
 compiling fixaddr.c...
 linking...
-Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
+Program Size: Code=668972 RO-data=64516 RW-data=4172 ZI-data=5806140  
 User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
 ".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
 Build target 'LPC3250'
-linking...
-Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
-User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
-".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
-Build target 'LPC3250'
+compiling CExtCard8VF.cpp...
+compiling CExtCard8VFG.cpp...
+compiling CExtCard8VFA.cpp...
+compiling CMibVFPortTable.cpp...
 compiling CVFPort.cpp...
+compiling CVFPortA.cpp...
+compiling CVFPortG.cpp...
 linking...
-Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
+Program Size: Code=669020 RO-data=64540 RW-data=4172 ZI-data=5806164  
 User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
 ".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).
 Build target 'LPC3250'
 compiling fixaddr.c...
 linking...
-Program Size: Code=667492 RO-data=64132 RW-data=3980 ZI-data=5806148  
+Program Size: Code=669020 RO-data=64540 RW-data=4172 ZI-data=5806164  
 User command #1: fromelf --bin --output ./bin/ISAP100_Release.bin ./UV4Build/ISAP100_Release.axf
 ".\UV4Build\ISAP100_Release.axf" - 0 Error(s), 0 Warning(s).

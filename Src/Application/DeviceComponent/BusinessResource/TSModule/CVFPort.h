@@ -15,6 +15,7 @@
 class CTSChannel;
 class CMSSave;
 class CVFPort : public RealPortBase {
+protected:
 	static std::map<uint32, CVFPort*> Group;
 public:
 	CVFPort(uint32 userIndex, uint8 portSn, VF_Port_Config_T*, VF_Group_Config_T*, CMSSave* driver);
@@ -57,11 +58,11 @@ public:
 	uint8 getPolarTurn(void);
 	int setPolarTurn(uint8 en, bool save = true);
 
-	uint8 getRcvGain(void);
-	int setRcvGain(uint8 vl, bool save = true);
+	virtual uint8 getRcvGain(void) = 0;
+	virtual int setRcvGain(uint8 vl, bool save = true) = 0;
 
-	uint8 getSndGain(void);
-	int setSndGain(uint8 vl, bool save = true);
+	virtual uint8 getSndGain(void) = 0;
+	virtual int setSndGain(uint8 vl, bool save = true) = 0;
 
 	char* getDesc(uint32*);
 	int setDesc(const char*, uint32);
@@ -81,7 +82,7 @@ public:
 
 	void process2100HZ(void);
 
-private:
+protected:
 	uint32 uid;
 	uint8 portSn;
 	CTSChannel* LinkChannel;

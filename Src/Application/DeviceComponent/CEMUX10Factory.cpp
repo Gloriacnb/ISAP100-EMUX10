@@ -11,7 +11,8 @@
 #include "CPowerSlot.h"
 #include <string>
 #include <sstream>
-#include "CExtCard8VF.h"
+#include "CExtCard8VFG.h"
+#include "CExtCard8VFA.h"
 #include "CPowerCard.h"
 #include "CExtCard8Data.h"
 
@@ -43,7 +44,7 @@ CBaseCard* CEMUX10Factory::make(int TypeID, CBaseSlot* slot) {
 				std::ostringstream s;
 				s << "8VF";
 				std::string name = s.str();
-				CExtCard8VF* card = new CExtCard8VF((uint8)slot->GetSn(), name);
+				CExtCard8VF* card = new CExtCard8VFA((uint8)slot->GetSn(), name);
 				return card;
 			}
 			case constPowerCardTypeID: {
@@ -60,6 +61,13 @@ CBaseCard* CEMUX10Factory::make(int TypeID, CBaseSlot* slot) {
 				CExtCard8Data* card = new CExtCard8Data((uint8)slot->GetSn(), name);
 				return card;
 			}
+			case const8VFGCardTypeID: {
+				std::ostringstream s;
+				s << "8VFG";
+				std::string name = s.str();
+				CExtCard8VFG* card = new CExtCard8VFG((uint8)slot->GetSn(), name);
+				return card;
+			}
 		}
 	}
 	return (CBaseCard*)0;
@@ -72,8 +80,11 @@ int CEMUX10Factory::destroy(CBaseCard* card) {
 
 	int TypeID = card->GetCartTypeID();
 	if (TypeID == const8VFCardTypeID) {
-		delete (CExtCard8VF*)card;
+		delete (CExtCard8VFA*)card;
 		return TypeID;
+	}
+	else if(TypeID == const8VFGCardTypeID ) {
+		delete (CExtCard8VFG*)card;
 	}
 	else if(TypeID == const8DTCardTypeID ) {
 		delete (CExtCard8Data*)card;

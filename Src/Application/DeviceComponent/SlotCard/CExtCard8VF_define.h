@@ -17,6 +17,7 @@ extern "C"
 	
 
 #define TYPE_8VF 0x51
+#define TYPE_8VFG 0x54
 
 typedef struct {
 	uint8 enable;
