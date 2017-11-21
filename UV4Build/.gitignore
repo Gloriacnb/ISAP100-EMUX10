@@ -2,3 +2,5 @@
 /LPC32x0_arm.lst
 /SWI_Table.lst
 /lpc32xx_vectors.lst
+/Obj/
+/Lst/

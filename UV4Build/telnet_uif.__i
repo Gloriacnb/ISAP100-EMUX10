@@ -1,5 +1,0 @@
--c --cpu ARM926EJ-S -D__RTX -g -O0 --apcs=interwork -I.\Src\lpc\include -I.\Src\lpc32xx\include -I.\Src\RTX_Config 
--I D:\WorkProgram\Keil\ARM\RV31\INC 
--I D:\WorkProgram\Keil\ARM\CMSIS\Include 
--I D:\WorkProgram\Keil\ARM\Inc\Philips 
--o ".\UV4Build\telnet_uif.o" --omf_browse ".\UV4Build\telnet_uif.crf" --depend ".\UV4Build\telnet_uif.d" "./Src/RTX_Config/Telnet_uif.c"

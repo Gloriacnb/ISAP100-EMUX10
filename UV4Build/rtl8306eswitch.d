@@ -1,9 +1,0 @@
-.\UV4Build\rtl8306eswitch.o: ./Src/MidWare/EthRTL8306E/RTL8306ESwitch.cpp
-.\UV4Build\rtl8306eswitch.o: ./Src/MidWare/EthRTL8306E/RTL8306ESwitch.h
-.\UV4Build\rtl8306eswitch.o: ./Src/MidWare/EthRTL8306E/rtk_api_ext.h
-.\UV4Build\rtl8306eswitch.o: .\Src\MidWare\EthRTL8306E\rtk_api.h
-.\UV4Build\rtl8306eswitch.o: .\Src\MidWare\include\EZ_types.h
-.\UV4Build\rtl8306eswitch.o: .\Src\MidWare\EthRTL8306E\rtl8306e_asicdrv.h
-.\UV4Build\rtl8306eswitch.o: .\Src\MidWare\EthRTL8306E\rtk_error.h
-.\UV4Build\rtl8306eswitch.o: ./Src/MidWare/EthRTL8306E/CSwitchBaseImpl.h
-.\UV4Build\rtl8306eswitch.o: .\Src\SNMP\Depend\CErrorValueDefine.h

@@ -1,5 +1,0 @@
--c --cpu ARM926EJ-S --fpu=vfpv2 -g -O0 --apcs=interwork -I.\Src\lpc\include -I.\Src\lpc32xx\include 
--I D:\WorkProgram\Keil\ARM\RV31\INC 
--I D:\WorkProgram\Keil\ARM\CMSIS\Include 
--I D:\WorkProgram\Keil\ARM\Inc\Philips 
--o ".\UV4Build\rt_agent.o" --omf_browse ".\UV4Build\rt_agent.crf" --depend ".\UV4Build\rt_agent.d" "./Src/Lib/RT_Agent.c"
