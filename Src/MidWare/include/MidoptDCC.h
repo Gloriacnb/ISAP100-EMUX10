@@ -17,7 +17,7 @@ extern "C"
 {
 #endif
 
-#define DEF_DCC_MTU	253
+#define DEF_DCC_MTU	1022
 #define DEF_DCN_MTU 1022
 
 typedef struct {
