@@ -22,6 +22,49 @@
 									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\RV31\INC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmSite}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/lpc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/lpc32xx/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/RTX_Config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Task}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/CLI_Commands}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/EZwellChipDriver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/RaycomChipDriver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/EthRTL8306E}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/s1l/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/Depend}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/BaseClass}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module/E1Alarm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module/E1MIB}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/CrossConnectionModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/SlotCard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/SaveInterface}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Tools}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/Flash/HistoryStore}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/AlarmModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/Flash}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/FromZLG}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/E1MIB}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/SDHModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/ModuleGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/Chips}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/UpDataMain}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/EthModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/SoftSwitch}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/TopologyModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/ElementGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/TSModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/AlarmGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/Performance}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\INC\Philips&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.145125199" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -30,19 +73,52 @@
 								<option id="gnu.cpp.compiler.mingw.exe.debug.option.optimization.level.461795362" name="Optimization Level" superClass="gnu.cpp.compiler.mingw.exe.debug.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.mingw.exe.debug.option.debugging.level.1132619260" name="Debug Level" superClass="gnu.cpp.compiler.mingw.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1826914536" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Tools}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/lpc/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/lpc32xx/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/lpc32xx}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\RV31\INC&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmSite}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/RTX_Config}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/BaseClass}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/EthModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Task}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/CLI_Commands}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/EZwellChipDriver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/RaycomChipDriver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/EthRTL8306E}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/s1l/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/Depend}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/BaseClass}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module/E1Alarm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module/E1MIB}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/CrossConnectionModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/SlotCard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/SaveInterface}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Tools}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/Flash/HistoryStore}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/AlarmModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/Flash}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/FromZLG}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/E1MIB}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/SDHModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/ModuleGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/Chips}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/UpDataMain}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/EthModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/SoftSwitch}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/TopologyModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/ElementGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmSite}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/TSModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/AlarmGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/Performance}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\INC\Philips&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\RV31\INC&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.796022498" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -53,11 +129,55 @@
 									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\RV31\INC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmSite}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/AlarmModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/lpc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/lpc32xx/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/RTX_Config}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Task}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/CLI_Commands}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/EZwellChipDriver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/RaycomChipDriver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/EthRTL8306E}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/MidWare/s1l/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/Depend}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/BaseClass}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module/E1Alarm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/E1Module/E1MIB}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/CrossConnectionModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/SlotCard}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/SaveInterface}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Tools}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/Flash/HistoryStore}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/AlarmModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/Hardware/Flash}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/Reference/FromZLG}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/E1MIB}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/SDHModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/ModuleGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/Chips}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/UpDataMain}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/EthModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/SoftSwitch}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/TopologyModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/ElementGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/Application/DeviceComponent/BusinessResource/TSModule}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/AlarmGroup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/Performance}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\INC\Philips&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1589811088" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug.1953911747" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.2131766895" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug">
+								<option id="gnu.cpp.link.option.paths.576384118" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1424287354" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
