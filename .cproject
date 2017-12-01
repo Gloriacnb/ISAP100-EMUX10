@@ -120,6 +120,9 @@
 									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\INC\Philips&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\RV31\INC&quot;"/>
 								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1699740411" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__irq"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.796022498" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug.1481713149" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.exe.debug">
@@ -173,11 +176,17 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ISAP100_Realese/Src/SNMP/SNMPMib/Private/Performance}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\WorkProgram\Keil_V4\ARM\INC\Philips&quot;"/>
 								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.852229355" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__irq"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.283719230" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" valueType="undefDefinedSymbols">
+									<listOptionValue builtIn="false" value="__BIGGEST_ALIGNMENT__"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1589811088" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug.1953911747" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug.2131766895" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.exe.debug">
-								<option id="gnu.cpp.link.option.paths.576384118" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths"/>
+								<option id="gnu.cpp.link.option.paths.576384118" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1424287354" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
